@@ -1,0 +1,16 @@
+﻿.Green
+{
+    color: Green;
+}
+.Red
+{
+    color: Red;
+}
+.line-between
+{
+  color:#B8B8B9;    
+}
+.table-Row-Color
+{
+    background-color: #EEEEFF;
+}

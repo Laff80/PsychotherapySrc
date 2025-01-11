@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+    <link href="../../Content/style/admin.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../Scripts/jQueryLibrary/jquery-1.4.1.js"></script>
+    <link href="../../Content/style/jquery-ui-1.7.3.custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../Scripts/plug-in/jquery.form.js"></script>
+    <script type="text/javascript" src="../../Scripts/jQueryLibrary/jquery.validate.js"></script>
+    <script type="text/javascript" src="../../Scripts/jQueryLibrary/MicrosoftAjax.js"></script>
+    <script type="text/javascript" src="../../Scripts/jQueryLibrary/MicrosoftMvcAjax.js"></script>
+    <script src="../../Scripts/plug-in/jquery-ui-1.8.11.custom.min.js" type="text/javascript"></script>
+    <link href="../../Content/style/jquery-ui-1.8.11.custom.css" rel="stylesheet" type="text/css" />
+    <script src="../../Scripts/com/Utils.js" type="text/javascript"></script>
+    <script src="../../Scripts/View/PageJScript.js" type="text/javascript"></script>
+    <link href="../../Content/style/UcItem.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+<body>
+    <div class="head"  style="display:none">
+        <div style="vertical-align:bottom;font-weight:bold;font-size:20px; color:White; padding:8px 0 0 30px">Management Sysment</div>
+<%--        <div class="head_left" id="topNav" >
+            <%Html.RenderPartial("NavigationControl", ViewData); %>
+        </div>
+        <div class="head_right">
+            <%Html.RenderPartial("LogOnUserControl");%>
+        </div>--%>
+    </div>
+<%--    <div class="masthead">
+        <div class="logo"></div>
+        <div class="function_word">
+        <div id="loadingStatus" class="loadingstatusbox" style="display: none">
+            Loading...</div></div>
+    </div>--%>
+    <div class="main">
+        <div class="main_left">
+            <div class="contentcreat"></div>
+            <div class="nav">
+                <%Html.RenderPartial("ManagerNavControl");%>
+            </div>
+        </div>
+        <div class="main_right">
+            <div class="barview">
+                <div class="barview_data"></div>
+                <div class="barview_name navigation"><asp:ContentPlaceHolder ID="phNavigation" runat="server" /></div>
+            </div>
+            <div class="main_content">
+                <div class="contentBox">
+                      <div class="toolbar">
+                      <asp:ContentPlaceHolder ID="phToolBar" runat="server" /></div>
+                      <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="clear:both"></div>
+    <div class="copyright">
+           <p>Copyright @ 2011 Integrated Health Pathways, Inc.</p>
+           <p>Version 0.9.10</p>
+    </div>
+    <div id="dialog_box"></div>
+</body>
+</html>

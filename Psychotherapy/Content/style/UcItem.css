@@ -1,0 +1,40 @@
+﻿
+.table_item
+{
+}
+.table_item table
+{
+    width: 100%;
+}
+.table_item table tr
+{
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+.table_item table tr:hover
+{
+    background-color: #FFFFCC;
+}
+.table_item table td
+{
+    border: 1px solid #50a0e7;
+    padding: 5px;
+}
+
+#pyDiv a
+{
+    margin-left: 20px;
+}
+#planItem ul
+{
+    padding-left: 30px;
+}
+.selectedItem
+{
+    background-color: #EEFFE2;
+    border: 1px solid #5DC323;
+}
+.b-Red
+{
+    color: Red;
+}

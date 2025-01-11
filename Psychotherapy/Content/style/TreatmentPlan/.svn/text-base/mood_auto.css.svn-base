@@ -1,0 +1,1070 @@
+
+#list
+{
+    margin:0 auto;
+	font-size:12px;
+	padding:0;
+	text-decoration:none;
+	font-family:Arial;
+	color:#000000;
+}
+#list a{
+	text-decoration:none;
+}
+#list a:link
+{
+    color: black;
+    text-decoration: none;
+}
+#list a:hvoer {
+	text-decoration:none;
+}
+.diagram a:hover{
+text-decoration:none;
+color:#000000;
+}
+.clear{
+	clear:both;
+	}
+.lfloat{
+	float:left;
+	}
+.rfloat{
+	float:right;
+	}
+.diagram{
+	margin:0 auto;
+	width:990px;
+	height:auto;
+/*	padding-left:23px;*/
+	margin-top:23px;
+	position:relative;
+}
+.yellow{
+	color:#FFFF00;
+	}
+.blue_mood{
+	color:#00b2c1;
+	}
+.blue2_mood{
+	color:#0070c0;
+	}
+.explain{
+	position:absolute;
+	left:0;
+	top:669px;
+	_top:679px;
+	font-weight:bold;
+	font-size:14px;
+	margin-left:130px;
+	}
+.explain_box{
+	width:500px;
+	height:380px;
+	}
+.mood_line{
+	height:40px;
+	width:880px;
+}
+.mood_title{
+	background-color:#B1BC99;
+	width:480px;
+	height:16px;
+	border:1px solid #000000;
+	font-size:14px;
+	font-weight:bold;
+	padding:10px;
+	float:left;
+	text-align:center;
+	color:#000000;
+}
+.garrow{
+	/*background:url(../../images/TreatmentPlan/mood_images/darrow.gif) no-repeat 0 0;*/
+	width:20px;
+	height:31px;
+	margin-left:63px;
+	}
+.gyarrow{
+	background:url(../../images/TreatmentPlan/mood_images/ydarrow.gif) no-repeat 0 0;
+	width:33px;
+	height:31px;
+	margin-left:63px;
+	clear:both;
+	*margin-top:32px;
+	_margin-top:0px;
+	}
+.gyarrow2{
+	float:left;
+	clear:none;
+	*margin-top:0px;
+	margin-left:40px;
+	_margin-left:23px;
+	}
+.gyarrow3{
+	float:left;
+	/*margin-top:-83px;*/
+	*margin-top:0px;
+	_margin-left:32px;
+	}
+.gyarrow4{
+	*margin-top:0px;
+	_margin-top:-5px;
+	}
+.gtyarrow{
+	background:url(../../images/TreatmentPlan/mood_images/tyrarrow.gif) no-repeat 0 0;
+	width:300px;
+	height:105px;
+	position:absolute;
+	top:70px;
+	right:123px;
+	z-index:1;
+	}
+.gtydarrow{
+	background:url(../../images/TreatmentPlan/mood_images/tydarrow.gif) no-repeat 0 0;
+	width:122px;
+	height:68px;
+	position:absolute;
+	top:107px;
+	_top:127px;
+	right:75px;
+	_right:85px;
+	z-index:10;
+	}
+.rnarrow{
+	background:url(../../images/TreatmentPlan/mood_images/rnarrow.gif) no-repeat 0 0;
+	width:28px;
+	height:34px;
+	position:absolute;
+	top:108px;
+	_top:128px;
+	right:20px;
+	}
+.rntdarrow{
+	background:url(../../images/TreatmentPlan/mood_images/rntdarrow.gif) no-repeat 0 0;
+	width:38px;
+	height:136px;
+	position:absolute;
+	top:188px;
+	left:155px;
+	}
+.rnlbarrow{
+	background:url(../../images/TreatmentPlan/mood_images/rnlbarrow.gif) no-repeat 0 0;
+	width:174px;
+	height:33px;
+	float:left;
+	margin-top:20px;
+	margin-left:-2px;
+	}
+.rarrow{
+	background:url(../../images/TreatmentPlan/mood_images/rarrow.gif) no-repeat 0 0;
+	width:27px;
+	height:14px;
+	float:left;
+	margin-top:23px;
+	}
+.rnrarrow{
+	background:url(../../images/TreatmentPlan/mood_images/rnrarrow.gif) no-repeat 0 0;
+	width:27px;
+	height:28px;
+	float:left;
+	}
+.rlnarrow{
+	background:url(../../images/TreatmentPlan/mood_images/rlnlarrow.gif) no-repeat 0 0;
+	width:36px;
+	height:119px;
+	position:absolute;
+	top:217px;
+	_top:237px;
+	right:37px;
+	*right:32px;
+	_right:32px;
+	}
+.ntlarrow{
+	background:url(../../images/TreatmentPlan/mood_images/nltllarrow.gif) no-repeat 0 0;
+	width:123px;
+	height:302px;
+	position:absolute;
+	top:222px;	
+	left:138px;
+	}
+.lydarrow{
+	background:url(../../images/TreatmentPlan/mood_images/lydarrow.gif) no-repeat 0 0;
+	width:123px;
+	height:148px;
+	float:left;
+	margin-left:63px;
+	_margin-left:33px;
+	margin-top:-1px;
+	_margin-top:-15px;
+	}
+.lydarrow2{
+	float:right;
+	width:45px;
+	height:148px;
+	margin-left:0;
+	margin-top:-125px;
+	*margin-top:-129px;
+	_margin-top:-129px;
+	}
+.glarrow{
+	background:url(../../images/TreatmentPlan/mood_images/glarrow.gif) no-repeat 0 0;
+	width:336px;
+	height:21px;
+	position:absolute;
+	top:530px;
+	left:134px;
+	/*float:left;
+	margin-top:29px;
+	*margin-top:178px;
+	_margin-top:174px;
+	margin-left:-54px;
+	*margin-left:-51px;
+	_margin-left:-54px;*/
+	}
+.gydarrow{
+	background:url(../../images/TreatmentPlan/mood_images/gydarrow.gif) no-repeat 0 0;
+	width:33px;
+	height:51px;
+	float:left;
+	margin-left:15px;
+	}
+.rndarrow{
+	background:url(../../images/TreatmentPlan/mood_images/rndarrow.gif) no-repeat 0 0;
+	width:29px;
+	height:30px;
+	margin-top:-2px;
+	margin-left:10px;
+	}
+.rndarrow2{
+	float:right;
+	margin-top:-125px;
+	*margin-top:-232px;
+	_margin-top:-125px;
+	margin-right:15px;
+	_margin-right:10px;
+	margin-left:0;
+	}
+.glydarrow{
+	background:url(../../images/TreatmentPlan/mood_images/glydarrow.gif) no-repeat 0 0;
+	width:32px;
+	height:124px;
+	margin-left:30px;
+	}
+.rnldarrow{
+	background:url(../../images/TreatmentPlan/mood_images/rnldarrow.gif) no-repeat 0 0;
+	width:195px;
+	height:49px;
+	position:absolute;
+	left:100px;
+	top:562px;
+	*top:559px;
+	_top:567px;
+	}
+.gdarrow_anxiety{
+	background:url(../../images/TreatmentPlan/mood_images/gdarrow_anxiety.png) no-repeat 0 0;
+	width:33px;
+	height:31px;
+	}
+.gdlarrow_anxiety{
+	background:url(../../images/TreatmentPlan/mood_images/gdlarrow_anxiety.png) no-repeat 0 0;
+	width:39px;
+	height:138px;
+	}
+.gydarrow_sud{
+	background:url(../../images/TreatmentPlan/mood_images/gyldarrow_sud.png) no-repeat 0 0;
+	width:34px;
+	height:63px;
+	}
+.rtarrow_mood{
+	background:url(../../images/TreatmentPlan/mood_images/rtarrow_mood.png) no-repeat 0 0;
+	width:153px;
+	height:39px;
+	margin-top:20px;
+	}
+.gyrlarrow_anxiety{
+	background:url(../../images/TreatmentPlan/mood_images/gyrlarrow_anxiety.png) no-repeat 0 0;
+	width:192px;
+	height:36px;
+	}
+.rndarrow_anxiety{
+	background:url(../../images/TreatmentPlan/mood_images/rndarrow_anxiety.png) no-repeat 0 0;
+	width:40px;
+	height:62px;
+	margin-top:55px;
+	}
+.gdyarrow_mood{
+	background:url(../../images/TreatmentPlan/mood_images/gdyarrow_mood.png) no-repeat 0 0;
+	width:40px;
+	height:62px;
+	margin-top:20px;
+	}
+.gclarrow_mood{
+	background:url(../../images/TreatmentPlan/mood_images/gclarrow_mood.png) no-repeat 0 0;
+	width:540px;
+	height:26px;
+	margin-right:10px;
+	}
+.rntarrow_mood{
+	background:url(../../images/TreatmentPlan/mood_images/rntarrow_mood.png) no-repeat 0 0;
+	width:33px;
+	height:31px;
+	margin-right:60px;
+	}
+.rnrarrow_mood{
+	background:url(../../images/TreatmentPlan/mood_images/rnrarrow_mood.png) no-repeat 0 0;
+	width:150px;
+	height:25px;
+	}
+.gclsarrow_anxiety{
+	background:url(../../images/TreatmentPlan/mood_images/gclsarrow_anxiety.png) no-repeat 0 0;
+	width:50px;
+	height:36px;
+	}
+.gydlarrow_anxiety{
+	background:url(../../images/TreatmentPlan/mood_images/gydlarrow_anxiety.png) no-repeat 0 0;
+	width:39px;
+	height:186px;
+	}
+.gycsarrow_mood{
+	background:url(../../images/TreatmentPlan/mood_images/gycsarrow_mood.png) no-repeat 0 0;
+	width:285px;
+	height:26px;
+	}
+.rdarrow{
+	background:url(../../images/TreatmentPlan/mood_images/rdarrow.png) no-repeat 0 0;
+	width:33px;
+	height:31px;
+	}
+.rnrsarrow_anxiety{
+	background:url(../../images/TreatmentPlan/mood_images/rnrsarrow_anxiety.png) no-repeat 0 0;
+	width:27px;
+	height:30px;
+	}
+.rndlarrow_mood{
+	background:url(../../images/TreatmentPlan/mood_images/rndlarrow_mood.png) no-repeat 0 0;
+	width:40px;
+	height:150px;
+	position:absolute;
+	top:189px;
+	left:0;
+	}
+.rrtmarrow_arrow{
+	background:url(../../images/TreatmentPlan/mood_images/rrtmarrow_arrow.png) no-repeat 0 0;
+	width:103px;
+	height:381px;
+	position:absolute;
+	top:180px;
+	left:3px;
+	}
+.gdlsarrow_mood{
+	background:url(../../images/TreatmentPlan/mood_images/gdlsarrow_mood.png) no-repeat 0 0;
+	width:39px;
+	height:107px;
+	}
+.rndtarrow_mood{
+	background:url(../../images/TreatmentPlan/mood_images/rndtarrow_mood.png) no-repeat 0 0;
+	width:219px;
+	height:107px;
+	position:absolute;
+	bottom:86px;
+	left:120px;
+	}
+.redline{
+	background-color:#953735;
+	width:585px;
+	_width:589px;
+	height:6px;
+	position:absolute;
+	top:260px;
+	_top:272px;
+	right:38px;
+	_right:33px;
+	font-size:0;
+	}
+.gnture{
+	background:url(../../images/TreatmentPlan/mood_images/gnture.gif) no-repeat 0 0;
+	width:112px;
+	height:111px;
+	position:absolute;
+	left:443px;
+	*left:438px;
+	_left:440px;
+	top:540px;
+	_top:544px;
+	}
+.box{
+	width:140px;
+	height:44px;
+	border:1px solid #000000;
+	padding:5px;
+	float:left;
+	clear:left;
+	}
+.box2{
+	height:66px;
+	width:90px;
+	border:1px solid #000000;
+	float:right;
+	margin-top:-50px;
+   _margin-top:-31px;
+	padding:10px;
+	text-align:center;
+	}
+.box3{
+	width:140px;
+	height:88px;
+	border:1px solid #000000;
+	float:left;	
+	padding:8px;
+	}
+.box4{
+	width:231px;
+	height:77px;
+	border:1px solid #000000;
+	float:left;	
+	padding:10px;
+	margin-left:47px;
+	margin-top:-35px;
+	}
+.box5{
+	width:140px;
+	height:44px;
+	border:1px solid #000000;
+	padding:5px;
+	float:left;
+	}
+.box6{
+	width:130px;
+	height:59px;
+	border:1px solid #000000;
+	padding:2.8px;
+	float:left;
+	clear:left;
+	/*margin-top:-143px;*/
+	}
+.box7{
+	width:110px;
+	height:34px;
+	border:1px solid #000000;
+	padding:10px;
+	margin-top:51px;
+	text-align:center;
+	}
+.box8{
+	width:110px;
+	height:44px;
+	border:1px solid #000000;
+	padding:10px;
+	margin-top:31px;
+	text-align:center;
+	}
+.pubox{
+	width:105px;
+	height:90px;
+	border:1px solid #000000;
+	padding:2px;
+	/*margin-top:-154px;
+	_margin-top:104px;
+	margin-right:274px;
+	_margin-right:174px;*/
+	background-color:#B3A2C7;
+	filter:progid:DXImageTransform.Microsoft.Shadow 
+(Color=#333333,Direction=120,strength=5);
+	}
+.pubox2{
+	float:right;
+	padding:7px;
+	width:60px;
+	height:70px;
+	margin-top:-97px;
+	*margin-top:-202px;
+	_margin-top:-202px;
+	margin-right:-31px;
+	_margin-right:0px;
+	}
+.orbox{
+	width:106px;
+	height:56px;
+	border:1px solid #000000;
+	background-color:#FAC090;
+	padding:4px;
+	float:right;
+	filter:progid:DXImageTransform.Microsoft.Shadow 
+(Color=#333333,Direction=120,strength=5);
+	*margin-top:98px;
+	_margin-top:0px;
+	clear:right;
+	}
+.orbox2{
+	height:94px;
+	padding:3px;
+	clear:left;
+	float:left;
+	*margin-top:0;
+	}
+.ogbox{
+	width:104px;
+	height:64px;
+	border:1px solid #000000;
+	background-color:#FAC090;
+	float:right;
+	text-align:center;
+	padding:2.8px;
+	margin-top:17px;
+	_margin-top:37px;
+	margin-right:50px;
+	filter:progid:DXImageTransform.Microsoft.Shadow 
+(Color=#333333,Direction=120,strength=5);
+	}
+.onnbox{
+	width:74px;
+	height:54px;
+	border:1px solid #000000;
+	background-color:#FAC090;
+	float:right;
+	text-align:center;
+	padding:10px;
+	margin-top:-17px;
+	_margin-top:0px;
+	margin-right:-10px;
+	_margin-right:0px;
+	filter:progid:DXImageTransform.Microsoft.Shadow 
+(Color=#333333,Direction=120,strength=5);
+	}
+.bbox{
+	width:104px;
+	height:34px;
+	border:1px solid #000000;
+	background-color:#B9CDE5;
+	text-align:center;
+	float:left;
+	padding:10px;
+	filter:progid:DXImageTransform.Microsoft.Shadow 
+(Color=#333333,Direction=120,strength=5);
+	}
+.ybox{
+	width:115.8px;
+	height:34px;
+	border:1px solid #000000;
+	background-color:#FFFF00;
+	text-align:center;
+	clear:left;
+	float:left;
+	padding:10px;
+	filter:progid:DXImageTransform.Microsoft.Shadow 
+(Color=#333333,Direction=120,strength=5);
+    /*margin-top:-52px;*/
+	}
+.ybox2{
+	margin-left:228px;
+	_margin-left:108px;
+	margin-top:-40px;
+	*margin-top:-45px;
+	_margin-top:-45px;
+	}
+.line{
+	height:54px;
+	width:870px;
+	}
+.line2{
+	height:54px;
+	width:870px;
+	}
+.narrow{
+	background:url(../../images/TreatmentPlan/mood_images/narrow.gif) no-repeat 0 0;
+	width:171px;
+	height:53px;
+	float:left;
+	}
+.space{
+	height:54px;
+	width:292px;
+	float:left;
+	}
+.bright{
+	/*float:right;*/
+	height:400px;
+	width:500px;
+	/*border:1px solid #333;*/
+	position:absolute;
+	right:-91px;
+	top:352px;
+	/*margin-top:-290px;
+	_margin-top:-5px;
+	margin-right:-95px;*/
+	}
+.linearrow{
+	height:51px;
+	width:200px;
+	float:left;
+	}
+.brlline{
+	height:51px;
+	width:160px;
+	}
+.rlinearrow{
+	height:51px;
+	width:290px;
+	float:right;
+	margin-left:5px;
+	}
+.rbrlline{
+	height:231px;
+	width:160px;
+	}
+
+.blue_box{
+	background-color: #83c7d3;
+	width:156px;
+	/*height:auto;*/
+	min-height:70px;
+	_height:43px;
+	position:relative;
+	text-align:center;
+}
+.btopbox{
+	width:156px;
+	height:13px;
+	position:relative;
+	background:url(../../images/TreatmentPlan/common/btline.jpg) repeat-x 0 0;
+	}
+.blt{
+	background:url(../../images/TreatmentPlan/common/blt.jpg) no-repeat 0 0;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:13px;
+	height:13px;
+	}
+.brt{
+	background:url(../../images/TreatmentPlan/common/brt.jpg) no-repeat 0 0;
+	position:absolute;
+	right:0;
+	top:0;
+	width:22px;
+	height:13px;
+	}
+.bcenterbox{
+	width:156px;
+	height:100%;
+	position:relative;
+	overflow:hidden;
+	_overflow:none;
+	}
+.bwordbox{
+	width:auto;
+	margin:0px 22px 0px 13px;
+	height:100%;
+	min-height:45px;
+	}
+.blline{
+	background:url(../../images/TreatmentPlan/common/blline.jpg) repeat-y 0 0;
+	width:8px;
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	_height:50px;
+	}
+.brline{
+	background:url(../../images/TreatmentPlan/common/brline.jpg) repeat-y 0 0;
+	width:22px;
+	position:absolute;
+	top:0;
+	right:0;
+	height:100%;
+	_height:50px;
+	}
+.bbottombox{
+	width:156px;
+	height:23px;
+	position:relative;
+	background:url(../../images/TreatmentPlan/common/bbline.jpg) repeat-x 0 bottom;
+	}
+.blb{
+	background:url(../../images/TreatmentPlan/common/blb.jpg) no-repeat 0 0;
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:15px;
+	height:23px;
+	}
+.brb{
+	background:url(../../images/TreatmentPlan/common/brb.jpg) no-repeat 0 0;
+	position:absolute;
+	right:0;
+	bottom:0;
+	width:22px;
+	height:23px;
+	}
+
+.white_box{
+	background-color: #ddebfd;
+	width:156px;
+	min-height:55px;
+	_height:55px;
+	/*height:auto;*/
+	/*width:162px;
+	height:67px*/;
+	position:relative;
+	text-align:center;
+}
+.wtopbox{
+	width:156px;
+	height:13px;
+	position:relative;
+	background:url(../../images/TreatmentPlan/common/wtline.jpg) repeat-x 0 0;
+	}
+.wlt{
+	background:url(../../images/TreatmentPlan/common/wlt.jpg) no-repeat 0 0;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:13px;
+	height:13px;
+	}
+.wrt{
+	background:url(../../images/TreatmentPlan/common/wrt.jpg) no-repeat 0 0;
+	position:absolute;
+	right:0;
+	top:0;
+	width:23px;
+	height:13px;
+	}
+.wcenterbox{
+	width:156px;
+	height:100%;
+	min-height:55px;
+	_height:55px;
+	position:relative;
+	overflow:hidden;
+	_overflow:none;
+	}
+.wwordbox{
+	width:auto;
+	margin:0px 23px 0px 13px;
+	height:100%;
+	}
+.wlline{
+	background:url(../../images/TreatmentPlan/common/wlline.jpg) repeat-y 0 0;
+	width:13px;
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	_height:55px;
+	}
+.wrline{
+	background:url(../../images/TreatmentPlan/common/wrline.jpg) repeat-y 0 0;
+	width:23px;
+	position:absolute;
+	top:0;
+	right:0;
+	height:100%;
+	_height:55px;
+	}
+.wbottombox{
+	width:156px;
+	height:21px;
+	position:relative;
+	background:url(../../images/TreatmentPlan/common/wbline.jpg) repeat-x 0 bottom;
+	}
+.wlb{
+	background:url(../../images/TreatmentPlan/common/wlb.jpg) no-repeat 0 0;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	width:13px;
+	height:21px;
+	}
+.wrb{
+	background:url(../../images/TreatmentPlan/common/wrb.jpg) no-repeat 0 0;
+	position:absolute;
+	right:0px;
+	bottom:0px;
+	width:23px;
+	height:21px;
+	}
+	
+.green_box{
+	background-color:#97d752;
+	width:156px;
+	min-height:43px;
+	_height:43px;
+	/*height:auto;*/
+	position:relative;
+	text-align:center;
+}
+.gtopbox{
+	width:156px;
+	height:17px;
+	position:relative;
+	background:url(../../images/TreatmentPlan/common/gtline.jpg) repeat-x 0 0;
+	}
+.glt{
+	background:url(../../images/TreatmentPlan/common/glt.jpg) no-repeat 0 0;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:18px;
+	height:17px;
+	}
+.grt{
+	background:url(../../images/TreatmentPlan/common/grt.jpg) no-repeat 0 0;
+	position:absolute;
+	right:0;
+	top:0;
+	width:24px;
+	height:17px;
+	}
+.gcenterbox{
+	width:156px;
+	/*min-height:70px;
+	_height:70px;*/
+	height:100%;
+	min-height:43px;
+	_height:43px;
+	position:relative;
+	overflow:hidden;
+	_overflow:none;
+	}
+.gwordbox{
+	width:auto;
+	margin:0px 23px 0px 13px;
+	height:100%;
+	}
+.glline{
+	background:url(../../images/TreatmentPlan/common/glline.jpg) repeat-y 0 0;
+	width:13px;
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	_height:43px;
+	}
+.grline{
+	background:url(../../images/TreatmentPlan/common/grline.jpg) repeat-y 0 0;
+	width:23px;
+	position:absolute;
+	top:0px;
+	right:0px;
+	height:100%;
+	_height:43px;
+	}
+.gbottombox{
+	width:156px;
+	height:27px;
+	position:relative;
+	background:url(../../images/TreatmentPlan/common/gbline.jpg) repeat-x 0 0;
+	}
+.glb{
+	background:url(../../images/TreatmentPlan/common/glb.jpg) no-repeat 0 0;
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:16px;
+	height:27px;
+	}
+.grb{
+	background:url(../../images/TreatmentPlan/common/grb.jpg) no-repeat 0 0;
+	position:absolute;
+	right:0;
+	bottom:0;
+	width:24px;
+	height:27px;
+	}	
+	
+.red_box{
+	background-color:#ff8181;
+	width:156px;
+	height:auto;
+	min-height:48px;
+	position:relative;
+	text-align:center;
+}
+.rtopbox{
+	width:156px;
+	height:17px;
+	position:relative;
+	background:url(../../images/TreatmentPlan/common/rtline.jpg) repeat-x 0 0;
+	}
+.rlt{
+	background:url(../../images/TreatmentPlan/common/rlt.jpg) no-repeat 0 0;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:19px;
+	height:17px;
+	}
+.rrt{
+	background:url(../../images/TreatmentPlan/common/rrt.jpg) no-repeat 0 0;
+	position:absolute;
+	right:0;
+	top:0;
+	width:24px;
+	height:17px;
+	}
+.rcenterbox{
+	width:156px;
+	height:100%;
+	min-height:48px;
+	position:relative;
+	overflow:hidden;
+	_overflow:hidden;
+	_height:48px;
+	}
+.rwordbox2{
+	_overflow:none;
+	}
+.rwordbox{	
+	width:auto;
+	margin:0px 23px 0px 13px;
+	height:100%;
+	}
+.rlline{
+	background:url(../../images/TreatmentPlan/common/rlline.jpg) repeat-y 0 0;
+	width:13px;
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	_height:48px;
+	}
+.rrline{
+	background:url(../../images/TreatmentPlan/common/rrline.jpg) repeat-y 0 0;
+	width:23px;
+	position:absolute;
+	top:0;
+	right:0;
+	height:100%;
+	_height:60px;
+	}
+.rbottombox{
+	width:156px;
+	height:27px;
+	position:relative;
+	background:url(../../images/TreatmentPlan/common/rbline.jpg) repeat-x 0 bottom;
+	}
+.rlb{
+	background:url(../../images/TreatmentPlan/common/rlb.jpg) no-repeat 0 0;
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:17px;
+	height:27px;
+	}
+.rrb{
+	background:url(../../images/TreatmentPlan/common/rrb2.jpg) no-repeat 0 0;
+	position:absolute;
+	right:0;
+	bottom:0;
+	width:26px;
+	height:27px;
+	}	
+
+.left_line{
+	width:156px;
+	height:auto;
+	min-height:668px;
+	position:relative;
+	}
+.right_line{
+	width:832px;
+	height:auto;
+	min-height:668px;
+	position:relative;
+	}
+.right_line_top{
+	width:724px;
+	height:auto;
+	min-height:300px;
+	position:relative;
+	}
+.right_line_bottom{
+	width:832px;
+	height:auto;
+	min-height:500px;
+	position:relative;
+	}
+.bottom_left_line{
+	width:518px;
+	height:auto;
+	min-height:500px;
+	position:relative;
+	}
+.bottom_right_line{
+	width:312px;
+	height:auto;
+	min-height:500px;
+	position:relative;
+	top: 0px;
+	left: 0px;
+}
+.arrow_line{
+	width:192px;
+	min-height:100px;
+	_height:100px;
+	}
+.short_left_line{
+	width:448px;
+	min-height:100px;
+	}
+.right_side_line{
+	width:178px;
+	min-height:100px;
+	}
+.wchange{
+	width:230px;
+	}
+.space{
+	width:27px;
+	height:30px;
+	}
+.key{
+	margin-left:65px;
+	}
+.key2{
+	margin-left:35px;
+	_margin-left:10px;
+	}
+.key3{
+	margin-top:25px;
+	}
+.key4{
+	margin-top:18px;
+	}
+.key5{
+	margin-right:60px;
+	}
+.key6{
+	margin-right:30px;
+	}
+.key7{
+	margin-right:15px;
+	}
+.key8{
+	margin-left:95px;
+	_margin-left:35px;
+	}
+.key9{
+	margin-top:8px;
+	}
+.key10{
+	margin-left:10px;
+	}
+.key11{
+	margin-left:108px;
+	_margin-left:50px;
+	}
+.hchange{
+	_height:50px;
+	}
+.hchange2{
+	_height:70px;
+	}
+.hchange3{
+	_height:120px;
+	}
+.hchange4{
+	_height:100px;
+	}

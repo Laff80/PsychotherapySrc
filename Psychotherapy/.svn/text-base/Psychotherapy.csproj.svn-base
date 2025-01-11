@@ -1,0 +1,899 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D059FA86-83EA-4982-859F-8F22C7C0F20D}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Insourcia.Psychotherapy</RootNamespace>
+    <AssemblyName>Insourcia.Psychotherapy</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\DLLs\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\DLLs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CategoryManageController.cs" />
+    <Compile Include="Controllers\ClientController.cs" />
+    <Compile Include="Controllers\ClusterManageController.cs" />
+    <Compile Include="Controllers\DepartmentManageController.cs" />
+    <Compile Include="Controllers\FilesController.cs" />
+    <Compile Include="Controllers\FlowChartController.cs" />
+    <Compile Include="Controllers\FormController.cs" />
+    <Compile Include="Controllers\FormsManageController.cs" />
+    <Compile Include="Controllers\InitController.cs" />
+    <Compile Include="Controllers\LogInfoManageController.cs" />
+    <Compile Include="Controllers\LongTermGoalManageController.cs" />
+    <Compile Include="Controllers\ObjectiveManageController.cs" />
+    <Compile Include="Controllers\ProcessGuideManageController.cs" />
+    <Compile Include="Controllers\QuestionnairesController.cs" />
+    <Compile Include="Controllers\RightsManagerController.cs" />
+    <Compile Include="Controllers\SigninController.cs" />
+    <Compile Include="Controllers\SiteManageController.cs" />
+    <Compile Include="Controllers\StrategyManageController.cs" />
+    <Compile Include="Controllers\SymptomManageController.cs" />
+    <Compile Include="Controllers\TreatmentPlanController.cs" />
+    <Compile Include="Controllers\UserManageController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\FormsModel.cs" />
+    <Compile Include="Models\ObjectiveModelComparer.cs" />
+    <Compile Include="Models\ObjectiveModel.cs" />
+    <Compile Include="Models\PatientModel.cs" />
+    <Compile Include="Models\TreatmentPlanItemModel.cs" />
+    <Compile Include="Models\UserTypeEnums.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\BaseController.cs" />
+    <Compile Include="Utility\Converter.cs" />
+    <Compile Include="Utility\EqualityComparer.cs" />
+    <Compile Include="Utility\ChartUc.cs" />
+    <Compile Include="Utility\Log\LogExceptionAttribute.cs" />
+    <Compile Include="Utility\Log\LogHelper.cs" />
+    <Compile Include="Utility\Log\LogsRequestsAttribute.cs" />
+    <Compile Include="Utility\MVCExtention.cs" />
+    <Compile Include="Utility\Security\Permission.cs" />
+    <Compile Include="Utility\Security\UrlAdminAuthorizeAttribute.cs" />
+    <Compile Include="Utility\StatusFilterAttribute.cs" />
+    <Compile Include="Utility\SysBaseController.cs" />
+    <Compile Include="Utility\XmlResult.cs" />
+    <Compile Include="Models\JsonModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\images\010-3.png" />
+    <Content Include="Content\images\2.png" />
+    <Content Include="Content\images\add.gif" />
+    <Content Include="Content\images\approve.gif" />
+    <Content Include="Content\images\barrier.png" />
+    <Content Include="Content\images\bbutton.gif" />
+    <Content Include="Content\images\bluebg.jpg" />
+    <Content Include="Content\images\bl_1.png" />
+    <Content Include="Content\images\bottombg.gif" />
+    <Content Include="Content\images\brbouuton.gif" />
+    <Content Include="Content\images\br_1.png" />
+    <Content Include="Content\images\calendar.png" />
+    <Content Include="Content\images\can.jpg" />
+    <Content Include="Content\images\cancel.gif" />
+    <Content Include="Content\images\Chart\folders.gif" />
+    <Content Include="Content\images\Chart\fu_bmp.gif" />
+    <Content Include="Content\images\Chart\fu_doc.gif" />
+    <Content Include="Content\images\Chart\fu_exl.gif" />
+    <Content Include="Content\images\Chart\fu_pdf.gif" />
+    <Content Include="Content\images\Chart\fu_rar.gif" />
+    <Content Include="Content\images\Chart\fu_txt.gif" />
+    <Content Include="Content\images\Chart\help.png" />
+    <Content Include="Content\images\Chart\icon_pdf.gif" />
+    <Content Include="Content\images\Chart\icon_txt.gif" />
+    <Content Include="Content\images\Chart\page_white_code.png" />
+    <Content Include="Content\images\Chart\printer.png" />
+    <Content Include="Content\images\Chart\spacer02340f.gif" />
+    <Content Include="Content\images\clincalservice\rating.png" />
+    <Content Include="Content\images\close.gif" />
+    <Content Include="Content\images\content_left.gif" />
+    <Content Include="Content\images\content_right.gif" />
+    <Content Include="Content\images\corner_bottom_left.gif" />
+    <Content Include="Content\images\corner_bottom_right.gif" />
+    <Content Include="Content\images\corner_left.gif" />
+    <Content Include="Content\images\corner_right.gif" />
+    <Content Include="Content\images\date.gif" />
+    <Content Include="Content\images\del.gif" />
+    <Content Include="Content\images\delete.gif" />
+    <Content Include="Content\images\DeleteRed.png" />
+    <Content Include="Content\images\down.gif" />
+    <Content Include="Content\images\downtr.gif" />
+    <Content Include="Content\images\edit.png" />
+    <Content Include="Content\images\edit_user.png" />
+    <Content Include="Content\images\exit.gif" />
+    <Content Include="Content\images\fieldbg.gif" />
+    <Content Include="Content\images\file.jpg" />
+    <Content Include="Content\images\foot_left.gif" />
+    <Content Include="Content\images\foot_right.gif" />
+    <Content Include="Content\images\gbutton.gif" />
+    <Content Include="Content\images\headbg.jpg" />
+    <Content Include="Content\images\help.gif" />
+    <Content Include="Content\images\ico07.gif" />
+    <Content Include="Content\images\ico24.gif" />
+    <Content Include="Content\images\jquery-ui\calendar.gif" />
+    <Content Include="Content\images\jquery-ui\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\images\jquery-ui\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="Content\images\jquery-ui\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="Content\images\jquery-ui\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="Content\images\jquery-ui\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\images\jquery-ui\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="Content\images\jquery-ui\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="Content\images\jquery-ui\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Content\images\jquery-ui\ui-icons_217bc0_256x240.png" />
+    <Content Include="Content\images\jquery-ui\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\images\jquery-ui\ui-icons_469bdd_256x240.png" />
+    <Content Include="Content\images\jquery-ui\ui-icons_6da8d5_256x240.png" />
+    <Content Include="Content\images\jquery-ui\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\images\jquery-ui\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Content\images\jquery-ui\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Content\images\leave.png" />
+    <Content Include="Content\images\leave1.gif" />
+    <Content Include="Content\images\leave2.gif" />
+    <Content Include="Content\images\loading.gif" />
+    <Content Include="Content\images\loading_16.gif" />
+    <Content Include="Content\images\login\bg.gif" />
+    <Content Include="Content\images\login\error_icon.png" />
+    <Content Include="Content\images\mark.jpg" />
+    <Content Include="Content\images\microscope.jpg" />
+    <Content Include="Content\images\new_item.gif" />
+    <Content Include="Content\images\n_arrow02.gif" />
+    <Content Include="Content\images\orangetr.gif" />
+    <Content Include="Content\images\pencial.jpg" />
+    <Content Include="Content\images\pic_new_02.gif" />
+    <Content Include="Content\images\pillar.jpg" />
+    <Content Include="Content\images\pop_close.png" />
+    <Content Include="Content\images\Position.png" />
+    <Content Include="Content\images\print.gif" />
+    <Content Include="Content\images\question.gif" />
+    <Content Include="Content\images\questionmark.jpg" />
+    <Content Include="Content\images\redbuttton.jpg" />
+    <Content Include="Content\images\redbuttton1.jpg" />
+    <Content Include="Content\images\redbuttton2.jpg" />
+    <Content Include="Content\images\redRect.jpg" />
+    <Content Include="Content\images\red_center.gif" />
+    <Content Include="Content\images\red_cross.gif" />
+    <Content Include="Content\images\red_left.gif" />
+    <Content Include="Content\images\red_right.gif" />
+    <Content Include="Content\images\right.gif" />
+    <Content Include="Content\images\search.gif" />
+    <Content Include="Content\images\search.png" />
+    <Content Include="Content\images\set.png" />
+    <Content Include="Content\images\subtr.gif" />
+    <Content Include="Content\images\tl_1.png" />
+    <Content Include="Content\images\top-menu-item-bg.gif" />
+    <Content Include="Content\images\topBar-bg.gif" />
+    <Content Include="Content\images\topBar-bg.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gdarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gdlarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gdrarrow_anxiety.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gdtarrow_anxiety.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gdylarrow_anxiety.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gdylarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gdylarrow_anxiety2.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gdylarrow_anxiety3.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\glryarrow_anxiety.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\glyarrow_anxiety.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\glyarrow_anxiety2.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\glyarrow_anxiety3.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\grdstyarrow_anxiety.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\grtsyarrow_anxiety.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\grtyarrow_anxiety.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gryarrow_anxiety.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gryarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\grywarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gsyrarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gydarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gydlarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gydllarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gydsarrow.jpg" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gylrarrow_anxiety.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gyrarrow_anxiety.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gyrarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gyrlarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gyrllarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gyrsarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gytarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gytcarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gytrlarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gytrlarrow_anxiety2.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gytrlarrow_anxiety3.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gytrlarrow_anxiety3_02.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gytrlarrow_anxiety3_03.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\gytrlarrow_anxiety3_04.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rdarrow.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rlnarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rnarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rndarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rndcarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rndlarrow_anxiety.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rndlarrow_anxiety1.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rndlcsarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rndlsarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rndrarrow_anxiety.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rndsarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rnlarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rnltarrow_anxiety.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rnrarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rnrlarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rnrrarrow_anxiety.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rnrsarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rnsdrarrow_anxiety.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rntarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rntrarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rntrarrow_anxiety2.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rntrsarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rntrsarrow_anxiety2.png" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rrndlarrow_anxiety.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rrndltarrow_anxiety.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rrndltarrow_anxiety2.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\rtrndlarrow_anxiety.gif" />
+    <Content Include="Content\images\TreatmentPlan\anxiety_images\ydarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\Copy of ydarrow.jpg" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\darrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\darrow.png" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\darrow1.gif" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\gdssarrow.jpg" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\gdyarrow.jpg" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\gdyarrow2.jpg" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\gdyarrow_cluster.png" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\gdyarrow_cluster2.png" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\gydsarrow.jpg" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\gyrarrow.jpg" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\gyrarrow_cluster.png" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\gyrarrow_cluster2.png" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\loading.gif" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\rndarrow.jpg" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\rndsarrow.jpg" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\rndsarrow_cluster.png" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\rndsarrow_cluster2.png" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\rnsarrow.jpg" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\rnsarrow.png" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\rnsarrow_cluster.png" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\ydarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\ydarrow.jpg" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\ydarrowtra.jpg" />
+    <Content Include="Content\images\TreatmentPlan\cluster_images\ydarrow_cluster.png" />
+    <Content Include="Content\images\TreatmentPlan\common\bbg.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\bbline.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\blb.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\blline.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\blt.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\brb.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\brline.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\brt.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\btline.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\gbline.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\glb.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\glline.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\glt.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\grb.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\grline.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\grt.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\gtline.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\rbline.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\rlb.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\rlline.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\rlt.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\rrb.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\rrb2.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\rrline.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\rrt.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\rtline.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\wbline.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\wlb.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\wlline.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\wlt.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\wrb.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\wrline.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\wrt.jpg" />
+    <Content Include="Content\images\TreatmentPlan\common\wtline.jpg" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\gaydlarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\gaydllarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\gcarrow_impulse.png" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\gdarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\gdarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\gdparrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\gdsarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\gdysarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\glarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\glyarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\grarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\gryarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\gsarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\gsyarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\gtarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\gtarrow_impulse.png" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\gtsarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\gttsarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\gydarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\gydlarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\gylarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\radarrow.png" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\rdarrow.png" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\rdarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\rddlarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\rdlarrow.png" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\rdlarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\rdsarrow.png" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\rdsarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\rlarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\rlnarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\rndlasarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\rndlsarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\rnrsarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\rrlarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\rsarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\rsdarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\rsdsarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\rsndlsarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\rsrsarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\rtarrow_impulse.png" />
+    <Content Include="Content\images\TreatmentPlan\impulse_images\rtdarrow_impulse.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\barrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\barrow2.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\barrow3.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\blarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\darrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\gclarrow_mood.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\gclarrow_mood1.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\gclarrow_mood2.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\gclsarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\gdarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\gdlarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\gdlsarrow_mood.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\gdyarrow_mood.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\glarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\glydarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\glydlarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\gnture.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\gnture2.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\gryarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\gtlarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\guarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\gyarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\gycsarrow_mood.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\gydarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\gydarrow_sud.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\gydlaarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\gydlarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\gylarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\gylarrow2.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\gyldarrow_sud.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\gyrlarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\larrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\lydarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\lydarrow2.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\narrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\nlltlarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\nltlarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\nltllarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\ntlarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rarrow_yes.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rdarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rdarrow.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rlarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rlnarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rlnlarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rnarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rndarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rndarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rndlarrow_mood.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rndtarrow_mood.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rnlarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rnlbarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rnldarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rnrarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rnrarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rnrarrow_mood.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rnrarrow_sud.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rnrsarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rnrsarrow_mood.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rntarrow_mood.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rntdarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rrlnarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rrnarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rrtmarrow_arrow.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rryarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rryarrow2.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rtarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\rtarrow_mood.png" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\triangle_big.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\tydarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\tyrarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\mood_images\ydarrow.gif" />
+    <Content Include="Content\images\TreatmentPlan\sub_auto_images\gcarrow_sud.png" />
+    <Content Include="Content\images\TreatmentPlan\sub_auto_images\gydarrow_sud.png" />
+    <Content Include="Content\images\TreatmentPlan\sub_auto_images\gyldarrow_sud.png" />
+    <Content Include="Content\images\TreatmentPlan\sub_auto_images\rndarrow_sud.png" />
+    <Content Include="Content\images\TreatmentPlan\sub_auto_images\rnrarrow_sud.png" />
+    <Content Include="Content\images\TreatmentPlan\sub_auto_images\rnrtarrow_sud.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\gaydlarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\gdarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\gdlarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\gdparrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\gdylarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\gryarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\grywarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\gsydlarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\gsyrarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\gydarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\gydlarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\gydllarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\gyrarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\gyrlarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\gyrllarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\gyrparrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\gyrsarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\ranarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\rdarrow.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\rdttarrow.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\rlnarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\rnarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\rndlcsarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\rndlsarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\rndsarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\rnlarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\rnlparrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\rnrarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\rnrlarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\rnrsarrow_anxiety.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\rsdttarrow.png" />
+    <Content Include="Content\images\TreatmentPlan\thought_images\rsndlsarrow_anxiety.png" />
+    <Content Include="Content\images\treeview\ajax-loader.gif" />
+    <Content Include="Content\images\treeview\file.gif" />
+    <Content Include="Content\images\treeview\folder-closed.gif" />
+    <Content Include="Content\images\treeview\folders.gif" />
+    <Content Include="Content\images\treeview\minus.gif" />
+    <Content Include="Content\images\treeview\plus.gif" />
+    <Content Include="Content\images\treeview\treeview-black-line.gif" />
+    <Content Include="Content\images\treeview\treeview-black.gif" />
+    <Content Include="Content\images\treeview\treeview-default-line.gif" />
+    <Content Include="Content\images\treeview\treeview-default.gif" />
+    <Content Include="Content\images\treeview\treeview-famfamfam-line.gif" />
+    <Content Include="Content\images\treeview\treeview-famfamfam.gif" />
+    <Content Include="Content\images\treeview\treeview-gray-line.gif" />
+    <Content Include="Content\images\treeview\treeview-gray.gif" />
+    <Content Include="Content\images\treeview\treeview-red-line.gif" />
+    <Content Include="Content\images\treeview\treeview-red.gif" />
+    <Content Include="Content\images\tree\file.gif" />
+    <Content Include="Content\images\tree\folder-closed.gif" />
+    <Content Include="Content\images\tree\folder.gif" />
+    <Content Include="Content\images\tree\minus.gif" />
+    <Content Include="Content\images\tree\plus.gif" />
+    <Content Include="Content\images\tree\treeview-black-line.gif" />
+    <Content Include="Content\images\tree\treeview-black.gif" />
+    <Content Include="Content\images\tree\treeview-default-line.gif" />
+    <Content Include="Content\images\tree\treeview-default.gif" />
+    <Content Include="Content\images\tree\treeview-famfamfam-line.gif" />
+    <Content Include="Content\images\tree\treeview-famfamfam.gif" />
+    <Content Include="Content\images\tree\treeview-gray-line.gif" />
+    <Content Include="Content\images\tree\treeview-gray.gif" />
+    <Content Include="Content\images\tree\treeview-red-line.gif" />
+    <Content Include="Content\images\tree\treeview-red.gif" />
+    <Content Include="Content\images\tree\tree_less.gif" />
+    <Content Include="Content\images\tree\tree_plus.gif" />
+    <Content Include="Content\images\triangle.gif" />
+    <Content Include="Content\images\triangle2.gif" />
+    <Content Include="Content\images\tr_1.png" />
+    <Content Include="Content\images\upload.png" />
+    <Content Include="Content\images\user.png" />
+    <Content Include="Content\images\view.png" />
+    <Content Include="Content\images\wcorner_bottom_left.gif" />
+    <Content Include="Content\images\wcorner_bottom_right.gif" />
+    <Content Include="Content\images\wcorner_left.gif" />
+    <Content Include="Content\images\wcorner_right.gif" />
+    <Content Include="Content\images\white.jpg" />
+    <Content Include="Content\images\white_left.gif" />
+    <Content Include="Content\images\white_right.gif" />
+    <Content Include="Content\style\admin.css" />
+    <Content Include="Content\style\client-form.css" />
+    <Content Include="Content\style\color.css" />
+    <Content Include="Content\style\jquery-ui-1.8.11.custom.css" />
+    <Content Include="Content\style\jquery.treeview.css" />
+    <Content Include="Content\style\main-content.css" />
+    <Content Include="Content\style\login.css" />
+    <Content Include="Content\style\MENUStyle.css" />
+    <Content Include="Content\style\form-template.css" />
+    <Content Include="Content\style\patient.css" />
+    <Content Include="Content\style\Site.css" />
+    <Content Include="Content\style\tipswindown.css" />
+    <Content Include="Content\style\TreatmentPlan\anxiety_auto.css" />
+    <Content Include="Content\style\TreatmentPlan\clinicalService.css" />
+    <Content Include="Content\style\TreatmentPlan\clusters_auto.css" />
+    <Content Include="Content\style\TreatmentPlan\common.css" />
+    <Content Include="Content\style\UcItem.css" />
+    <Content Include="Scripts\com\Async.js" />
+    <Content Include="Scripts\plug-in\jquery-ui-1.8.11.custom.min.js" />
+    <Content Include="Scripts\plug-in\jQuery.extend.js" />
+    <Content Include="Scripts\plug-in\jQuery.fn.extend.js" />
+    <Content Include="Scripts\plug-in\jquery.treeview.js" />
+    <Content Include="Scripts\TreatmentPlan\alertDialog.js" />
+    <Content Include="Scripts\TreatmentPlan\array.js" />
+    <Content Include="Scripts\TreatmentPlan\Item.js" />
+    <Content Include="Scripts\TreatmentPlan\selectTreatmentPlan.js" />
+    <Content Include="Content\style\TreatmentPlan\treatmentPlanItem.css" />
+    <Content Include="Content\style\TreatmentPlan\treatmentPlanInfo.css" />
+    <Content Include="Content\style\TreatmentPlan\impulse_auto.css" />
+    <Content Include="Content\style\TreatmentPlan\mood_auto.css" />
+    <Content Include="Content\style\TreatmentPlan\mytable.css" />
+    <Content Include="Content\style\TreatmentPlan\sub_auto.css" />
+    <Content Include="Content\style\TreatmentPlan\thought_auto.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\com\Utils.js" />
+    <Content Include="Scripts\plug-in\jquery.form.js" />
+    <Content Include="Scripts\plug-in\jquery.idTabs.min.js" />
+    <Content Include="Scripts\TreatmentPlan\Back.js" />
+    <Content Include="Scripts\TreatmentPlan\Cluster.js" />
+    <Content Include="Scripts\TreatmentPlan\OpenDivWindow.js" />
+    <Content Include="Scripts\TreatmentPlan\ProcessGuide.js" />
+    <Content Include="Scripts\TreatmentPlan\ShowWindow.js" />
+    <Content Include="Scripts\TreatmentPlan\TreatmentPlanUtil.js" />
+    <Content Include="Scripts\Utility\combobox.js" />
+    <Content Include="Scripts\Utility\menu.js" />
+    <Content Include="Scripts\Utility\tipswindown.js" />
+    <Content Include="Scripts\View\PageJScript.js" />
+    <Content Include="Scripts\View\newformMenu.js" />
+    <Content Include="Scripts\View\patient.js" />
+    <Content Include="Views\Account\Settings.aspx" />
+    <Content Include="Views\CategoryManage\Categories.aspx" />
+    <Content Include="Views\CategoryManage\SettingForm.aspx" />
+    <Content Include="Views\CategoryManage\EditCategory.aspx" />
+    <Content Include="Views\CategoryManage\NewCategory.aspx" />
+    <Content Include="Views\CategoryManage\UcCategories.ascx" />
+    <Content Include="Views\Client\Chart.aspx" />
+    <Content Include="Views\Client\Create.aspx" />
+    <Content Include="Views\Client\Edit.aspx" />
+    <Content Include="Views\Client\Files.aspx" />
+    <Content Include="Views\Client\TreeViewFrom.ascx" />
+    <Content Include="Views\Client\TreeViewScannedFrom.ascx" />
+    <Content Include="Views\Client\TreeViewTreatmentPlan.ascx" />
+    <Content Include="Views\Client\SharePatient.aspx" />
+    <Content Include="Views\Client\UcFiles.ascx" />
+    <Content Include="Views\Client\UcPatientPermissionList.ascx" />
+    <Content Include="Views\ClusterManage\Clusters.aspx" />
+    <Content Include="Views\ClusterManage\EditCluster.aspx" />
+    <Content Include="Views\ClusterManage\NewCluster.aspx" />
+    <Content Include="Views\ClusterManage\UcClusters.ascx" />
+    <Content Include="Views\DepartmentManage\NewDepartment.aspx" />
+    <Content Include="Views\DepartmentManage\DepartmentInfo.aspx" />
+    <Content Include="Views\DepartmentManage\UcDepartments.ascx" />
+    <Content Include="Views\DepartmentManage\Departments.aspx" />
+    <Content Include="Views\DepartmentManage\EditDepartment.aspx" />
+    <Content Include="Views\Files\ShareFiles.aspx" />
+    <Content Include="Views\Files\UcFilePermissionList.ascx" />
+    <Content Include="Views\Files\Upload.aspx" />
+    <Content Include="Views\FlowChart\AnxietyDisorder.aspx" />
+    <Content Include="Views\FlowChart\Cluster.aspx" />
+    <Content Include="Views\FlowChart\Impulse.aspx" />
+    <Content Include="Views\FlowChart\Mood.aspx" />
+    <Content Include="Views\FlowChart\Sud.aspx" />
+    <Content Include="Views\FlowChart\ThoughtDisorder.aspx" />
+    <Content Include="Views\FormsManage\EditForm.aspx" />
+    <Content Include="Views\FormsManage\Forms.aspx" />
+    <Content Include="Views\FormsManage\NewForm.aspx" />
+    <Content Include="Views\FormsManage\UcForms.ascx" />
+    <Content Include="Views\Form\EditForm.aspx" />
+    <Content Include="Views\Form\FormInfo.aspx" />
+    <Content Include="Views\Form\List.aspx" />
+    <Content Include="Views\Client\Info.aspx" />
+    <Content Include="Views\Client\List.aspx" />
+    <Content Include="Views\Form\ShareForm.aspx" />
+    <Content Include="Views\Form\Uc1NewAccountableDisclosureTrackingLog.ascx" />
+    <Content Include="Views\Form\Uc1NewClinicalNote.ascx" />
+    <Content Include="Views\Form\Uc1NewTermTransitionSummary.ascx" />
+    <Content Include="Views\Form\Uc1NewAdmissionPainAssessment.ascx" />
+    <Content Include="Views\Form\Uc1NewAdmissionPrescreeningAssessment.ascx" />
+    <Content Include="Views\Form\Uc1NewClosingLetter.ascx" />
+    <Content Include="Views\Form\Uc1NewExperientialTherapyAssessment.ascx" />
+    <Content Include="Views\Form\UcFormList.ascx" />
+    <Content Include="Views\Form\UcFormPermissionList.ascx" />
+    <Content Include="Views\Form\UcFormsPermissionList.ascx" />
+    <Content Include="Views\Form\UcNewFormMenu.ascx" />
+    <Content Include="Views\Client\UcPatient1.ascx" />
+    <Content Include="Views\Client\UcPatient2.ascx" />
+    <Content Include="Views\Client\UcPatient3.ascx" />
+    <Content Include="Views\Client\UcPatient4.ascx" />
+    <Content Include="Views\Form\Uc1NewFaceToFaceAssessment.ascx" />
+    <Content Include="Views\Form\Uc1NewListOfAdmissionInformation.ascx" />
+    <Content Include="Views\Form\Uc1NewEmergencyAssessment.ascx" />
+    <Content Include="Views\Form\ShareForms.aspx" />
+    <Content Include="Views\Init\index.aspx" />
+    <Content Include="Views\LogInfoManage\LogList.aspx" />
+    <Content Include="Views\LogInfoManage\UcLogList.ascx" />
+    <Content Include="Views\Form\NewForm.aspx" />
+    <Content Include="Views\Form\Uc1NewPhysicianOrders.ascx" />
+    <Content Include="Views\LongTermGoalManage\LongTermGoals.aspx" />
+    <Content Include="Views\LongTermGoalManage\UcLongTermGoals.ascx" />
+    <Content Include="Views\ObjectiveManage\Objectives.aspx" />
+    <Content Include="Views\ObjectiveManage\UcObjectives.ascx" />
+    <Content Include="Views\ProcessGuideManage\EditProcessElement.aspx" />
+    <Content Include="Views\ProcessGuideManage\NewProcessElement.aspx" />
+    <Content Include="Views\ProcessGuideManage\ProcessElement.aspx" />
+    <Content Include="Views\ProcessGuideManage\UcProcessElement.ascx" />
+    <Content Include="Views\ProcessGuideManage\UcSettingQuestions.ascx" />
+    <Content Include="Views\Questionnaires\UcStrategyItem.ascx" />
+    <Content Include="Views\Questionnaires\UcObjectiveItem.ascx" />
+    <Content Include="Views\Questionnaires\UcLongTermGoalItem.ascx" />
+    <Content Include="Views\Questionnaires\UcSymptomItem.ascx" />
+    <Content Include="Views\RightsManager\AssignGroupToUser.aspx" />
+    <Content Include="Views\RightsManager\AssignRightsToGroup.aspx" />
+    <Content Include="Views\RightsManager\GroupList.aspx" />
+    <Content Include="Views\RightsManager\RightsList.aspx" />
+    <Content Include="Views\RightsManager\RightsOfGroupList.ascx" />
+    <Content Include="Views\RightsManager\UcGroupList.ascx" />
+    <Content Include="Views\RightsManager\UcRightsList.ascx" />
+    <Content Include="Views\RightsManager\ViewGroup.aspx" />
+    <Content Include="Views\RightsManager\ViewUserGroup.aspx" />
+    <Content Include="Views\Shared\ErrorMessage.aspx" />
+    <Content Include="Views\Shared\ManagerNavControl.ascx" />
+    <Content Include="Views\Shared\NoAuthorize.aspx" />
+    <Content Include="Views\Shared\SystemError.aspx" />
+    <Content Include="Views\SiteManage\NewSite.aspx" />
+    <Content Include="Views\SiteManage\EditSite.aspx" />
+    <Content Include="Views\SiteManage\Sites.aspx" />
+    <Content Include="Views\SiteManage\UcSites.ascx" />
+    <Content Include="Views\Shared\RedirectToLogin.aspx" />
+    <Content Include="Views\StrategyManage\Strategies.aspx" />
+    <Content Include="Views\StrategyManage\UcStrategies.ascx" />
+    <Content Include="Views\SymptomManage\Symptoms.aspx" />
+    <Content Include="Views\SymptomManage\UcSymptoms.ascx" />
+    <Content Include="Views\TreatmentPlan\DisplayClusterDocsLinks.ascx" />
+    <Content Include="Views\TreatmentPlan\DisplayTitle.ascx" />
+    <Content Include="Views\TreatmentPlan\ShareTreatmentPlan.aspx" />
+    <Content Include="Views\TreatmentPlan\UcTMPPermissionList.ascx" />
+    <Content Include="Views\TreatmentPlan\UcTreatmentPlanTree.ascx" />
+    <Content Include="Views\TreatmentPlan\ClintcalServiceInfo.aspx" />
+    <Content Include="Views\TreatmentPlan\NewClintcalService.aspx" />
+    <Content Include="Views\TreatmentPlan\TreatmentPlanInfo.aspx" />
+    <Content Include="Views\TreatmentPlan\TreatmentPlanList.aspx" />
+    <Content Include="Views\TreatmentPlan\UcRating.ascx" />
+    <Content Include="Views\TreatmentPlan\UcTreatmentPlanItem.ascx" />
+    <Content Include="Views\TreatmentPlan\UpdateItem.aspx" />
+    <Content Include="Views\UserManage\NewUser.aspx" />
+    <Content Include="Views\UserManage\EditUser.aspx" />
+    <Content Include="Views\UserManage\UserInfo.aspx" />
+    <Content Include="Views\UserManage\Users.aspx" />
+    <Content Include="Views\Client\UcClientList.ascx" />
+    <Content Include="Views\TreatmentPlan\UcTreatmentPlansList.ascx" />
+    <Content Include="Views\Shared\CurrentClientControl.ascx" />
+    <Content Include="Views\SignIn\AdminLogIn.aspx" />
+    <Content Include="Views\SignIn\LogIn.aspx" />
+    <Content Include="Views\TreatmentPlan\ClintcalService.aspx" />
+    <Content Include="Views\TreatmentPlan\UcClinicalService.ascx" />
+    <Content Include="Views\UserManage\UcUsers.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jQueryLibrary\jquery-1.4.1.js" />
+    <Content Include="Scripts\jQueryLibrary\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jQueryLibrary\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jQueryLibrary\jquery.validate.js" />
+    <Content Include="Scripts\jQueryLibrary\jquery.validate.min.js" />
+    <Content Include="Scripts\jQueryLibrary\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jQueryLibrary\MicrosoftAjax.js" />
+    <Content Include="Scripts\jQueryLibrary\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\jQueryLibrary\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\jQueryLibrary\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\jQueryLibrary\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\jQueryLibrary\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Account\ChangePassword.aspx" />
+    <Content Include="Views\Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Views\Account\LogOn.aspx" />
+    <Content Include="Views\Account\Register.aspx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\LogOnUserControl.ascx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="ClientFiles\" />
+    <Folder Include="Views\App_LocalResources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bll\Bll.csproj">
+      <Project>{1B3BE663-1E54-443C-8C24-AD37C827D62D}</Project>
+      <Name>Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{697DCD0F-D2FA-484F-8D1F-42033E374DA7}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LinqKitSource\LinqKit.csproj">
+      <Project>{230964C1-F7C5-4EDC-B812-BB4F19915139}</Project>
+      <Name>LinqKit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{052B1A96-C883-4ECE-A581-5856356D9067}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MvcPaging\MvcPaging.csproj">
+      <Project>{B5CE93E2-BA2D-4347-9C2D-3228F39FC097}</Project>
+      <Name>MvcPaging</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Resource.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\images\TreatmentPlan\anxiety_images\Thumbs.db" />
+    <None Include="Content\images\TreatmentPlan\cluster_images\Thumbs.db" />
+    <None Include="Content\images\TreatmentPlan\common\Thumbs.db" />
+    <None Include="Content\images\TreatmentPlan\impulse_images\Thumbs.db" />
+    <None Include="Content\images\TreatmentPlan\mood_images\Thumbs.db" />
+    <None Include="Content\images\TreatmentPlan\sub_auto_images\Thumbs.db" />
+    <None Include="Content\images\TreatmentPlan\thought_images\Thumbs.db" />
+    <Content Include="Views\Form\Pdf\ClosingLetter.pdf" />
+    <Content Include="Views\Form\Pdf\PhysicianOrders.pdf" />
+    <Content Include="LogConfig.isclog" />
+    <Content Include="Views\Client\Pdf\PSYCHOSOCIAL-DRAFT.pdf" />
+    <Content Include="Views\Form\Pdf\AccountableDisclosureTrackingLog.pdf" />
+    <Content Include="Views\Form\Pdf\AdmissionPainAssessment.pdf" />
+    <Content Include="Views\Form\Pdf\AdmissionPrescreeningAssessment.pdf" />
+    <Content Include="Views\Shared\ManagerSite.Master" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Anxiety and Trauma Disorders\At a Glance Summaries\Acute Stress Disorder and PTSD At A Glance.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Anxiety and Trauma Disorders\At a Glance Summaries\General Anxiety Disorder At A Glance.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Anxiety and Trauma Disorders\At a Glance Summaries\Introduction to Anxiety and Trauma Disorders REV.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Anxiety and Trauma Disorders\At a Glance Summaries\Introduction to Anxiety and Trauma Disorders.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Anxiety and Trauma Disorders\At a Glance Summaries\Panic Disorder At A Glance.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Impulse and Disruptive Behavior Disorders\At a Glance Summaries\ADHD At A Glance.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Impulse and Disruptive Behavior Disorders\At a Glance Summaries\Borderline Personality Disorder At A Glance.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Impulse and Disruptive Behavior Disorders\At a Glance Summaries\Intermittent Explosive Disorder At A Glance.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Impulse and Disruptive Behavior Disorders\At a Glance Summaries\Kleptomania At A Glance.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Impulse and Disruptive Behavior Disorders\At a Glance Summaries\Oppositional Defiant Disorder at A Glance.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Impulse and Disruptive Behavior Disorders\At a Glance Summaries\Pathological Gambling Disorder At A Glance.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Impulse and Disruptive Behavior Disorders\At a Glance Summaries\Pyromania At A Glance.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Impulse and Disruptive Behavior Disorders\At a Glance Summaries\Trichotillomania At A Glance.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Impulse and Disruptive Behavior Disorders\Guidelines\BPD guideline.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Impulse and Disruptive Behavior Disorders\Guidelines\Copyrighted - Child and Adolescent ADHD.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Impulse and Disruptive Behavior Disorders\Guidelines\Copyrighted - Child and Adolescent ODD.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Mood Disorders\At a Glance Summaries\Adult Bipolar Disorders at a Glance.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Mood Disorders\At a Glance Summaries\Adult Depression at a Glance.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Mood Disorders\At a Glance Summaries\At A Glance Adjustment disorder with depressed mood.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Mood Disorders\At a Glance Summaries\Children and Adolescents With Bipolar Disorders.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Mood Disorders\At a Glance Summaries\Children and Adolescents with Depression at a Glance.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Mood Disorders\At a Glance Summaries\Hospitalization for Bipolar Disorder At-A-Glance - R.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Mood Disorders\At a Glance Summaries\Hospitalization for Depression At A Glance.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Mood Disorders\At a Glance Summaries\Schizoaffective Disorder At A Glance.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Mood Disorders\At a Glance Summaries\Summaries of diagnoses without guidelines\Adjustment Disorder with Depressed Features at a Glance.docx" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Mood Disorders\At a Glance Summaries\Summaries of diagnoses without guidelines\Bereavement At A Glance.docx" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Mood Disorders\At a Glance Summaries\Summaries of diagnoses without guidelines\Cyclothymic Disorder At A Glance.docx" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Mood Disorders\At a Glance Summaries\Summaries of diagnoses without guidelines\Dysthymia At A Glance.docx" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Mood Disorders\Guidelines\ANX-Prac Guidelines-CPA-2006.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Mood Disorders\Guidelines\guideline adult bipolar.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Mood Disorders\Guidelines\guideline C-A bipolar.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Mood Disorders\Guidelines\guideline C-A depression.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Mood Disorders\Guidelines\guideline depressive disorder.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Substance Use Disorders\At a Glance Summaries\Detox Treatment Settings At A Glance.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Substance Use Disorders\At a Glance Summaries\Substance Abuse Comorbid At A Glance.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Substance Use Disorders\At a Glance Summaries\Substance Use Disorders At A Glance.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Thought Disorders\At a Glance Summaries\Schizoaffective Disorder At A Glance.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Thought Disorders\At a Glance Summaries\Schizophrenia in Adults At A Glance.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Thought Disorders\At a Glance Summaries\Schizophrenia in Children At A Glance.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Thought Disorders\Guidelines\Adult Schizophrenia.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Thought Disorders\Guidelines\Child and Adolescent Schizophrenia.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Thought Disorders\Guidelines\Cognitive Treatment for Schizophrenia.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Substance Use Disorders\Guidelines\NGC Detox and SUD treatment, settings, levels of care, and patient placement.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Substance Use Disorders\Guidelines\NGC Substance abuse treatment with co-occurring disorders.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Substance Use Disorders\Guidelines\NGC SUD Guideline-2007.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Substance Use Disorders\Guidelines\NGC SUD Practice Guideline-BRIEF SUMMARY.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Anxiety and Trauma Disorders\Guidelines\apa Guideline Watch-ASD-PTSD-2009-SUMMARY.docx" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Anxiety and Trauma Disorders\Guidelines\apaASD-PTSDloadGuidelinePdf.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Anxiety and Trauma Disorders\Guidelines\apaGuidelineWatchASD-PTSD-2009 Supplement.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Anxiety and Trauma Disorders\Guidelines\copyrighted-Canadian Guidelines.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Anxiety and Trauma Disorders\Guidelines\NGC apa OCD Guideline.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Anxiety and Trauma Disorders\Guidelines\NGC-apa-Panic Disorder Guideline-2009 Update.pdf" />
+    <Content Include="Views\TreatmentPlan\ClusterDocs\Thought Disorders\At a Glance Summaries\Psychosis in Youth At A Glance.pdf" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>17853</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

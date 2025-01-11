@@ -1,0 +1,636 @@
+/*body{
+	margin:0 auto;
+	font-size:10px;
+	padding:0;
+	text-decoration:none;
+	font-family:Arial;
+	color:#000000;
+	margin-top:10px;
+}*/
+#list a{
+	text-decoration:none;
+}
+#list a:link
+{
+    color: black;
+    text-decoration: none;
+}
+#list a:hvoer {
+	text-decoration:none;
+}
+.diagram a:hover{
+text-decoration:none;
+color:#000000;
+}
+.lfloat{
+	float:left;
+	}
+.diagram{
+	width:712px;
+	_width:673px;
+	height:auto;
+	/*padding-left:290px;*/
+	padding-top:23px;
+	position:relative;
+	font-size:12px;
+	margin-bottom:23px;
+	top: 0px;
+	left: 21px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+}
+.diagram_left{
+	width:162px;
+	height:auto;
+	}
+.diagram_right{
+	width:608px;
+	height:auto;
+	margin-left:162px;
+	}
+.violet{
+	background-color:#b3a2c7;
+	filter:progid:DXImageTransform.Microsoft.Shadow 
+(Color=#333333,Direction=120,strength=5);
+	}
+.violet_font{
+	color:#604A7B;
+	}
+.mood_line{
+	height:36px;
+	width:569px;
+}
+.mood_title{
+	/*background-color:#77933C;*/
+	background-color:#b1bc99;
+	width:550px;
+	height:16px;
+	border:1px solid #000000;
+	font-size:14px;
+	font-weight:bold;
+	padding:10px;
+	float:left;
+	text-align:center;
+}
+.line{
+	height:31px;
+	width:569px;
+	}
+.line2{
+	width:442px;
+	height:71px;
+	*margin-top:2px;
+	_margin-top:-5px;
+	}
+.line3{
+	width:408px;
+	height:71px;
+	height:71px\9;
+	*height:75px;
+	_height:71px;
+	*margin-top:3px;
+	_margin-top:-5px;
+	}
+.line4{
+	width:408px;
+	height:71px;
+	margin-top:2px;
+	_margin-top:0px;
+	}
+.box_line{
+	min-height:83px;
+	width:508px;
+	*width:521px;
+	_width:508px;
+}
+.box_line2{
+	/*_margin-top:-68px;*/
+	}
+.box_line3{
+	margin-left:0px;
+	margin-top:0px;
+	*margin-top:2px;
+	_margin-top:0px;
+	}
+.box_line4{
+	float:left;
+	}
+.garrow{
+	background:url(../../images/TreatmentPlan/cluster_images/darrow.jpg) no-repeat 0 0;
+	width:20px;
+	height:31px;
+	margin-left:63px;	
+	}
+.rnsarrow{
+	background:url(../../images/TreatmentPlan/cluster_images/rnsarrow_cluster.png) no-repeat 0 0;
+	width:40px;
+	height:33px;
+	float:left;
+	margin-top:20px;
+	_behavior:url(../../images/TreatmentPlan/iepngfix.htc);
+	}
+/*.rnsarrow2{
+	margin-left:2px \9;
+	}*/
+.gyrarrow{
+	background:url(../../images/TreatmentPlan/cluster_images/gyrarrow_cluster2.png) no-repeat 0 0;
+	width:39px;
+	height:38px;
+	float:left;
+	margin-top:18px;
+	_behavior:url(../../images/TreatmentPlan/iepngfix.htc);
+	}
+.ydarrow{
+	background:url(../../images/TreatmentPlan/cluster_images/gdyarrow_cluster2.png) no-repeat 0 0;
+	width:35px;
+	height:71px;
+	float:left;
+	margin-left:63px;
+	_margin-left:33px;
+	_behavior:url(../../images/TreatmentPlan/iepngfix.htc);
+	}
+.rndarrow{
+	background:url(../../images/TreatmentPlan/rndarrow.jpg) no-repeat 0 0;
+	width:36px;
+	height:144px;
+	float:left;
+	margin-left:160px;
+	_margin-left:130px;
+	_margin-top:0px;
+	}
+.rndsarrow{
+	background:url(../../images/TreatmentPlan/cluster_images/rndsarrow_cluster2.png) no-repeat 0 0;
+	width:35px;
+	height:71px;
+	float:left;
+	margin-left:105px;
+	_margin-left:55px;
+	margin-top:0px;
+	*margin-top:3px;
+	_margin-top:5px;
+	_behavior:url(../../images/TreatmentPlan/cluster_images/iepngfix.htc);
+	}
+/*.gdyarrow{
+	background:url(../../images/TreatmentPlan/cluster_images/gdyarrow.jpg) no-repeat 0 0;
+	width:35px;
+	height:71px;
+	float:left;
+	margin-left:160px;
+	_margin-left:130px;
+	}*/
+.gydsarrow{
+	background:url(../../images/TreatmentPlan/cluster_images/gydsarrow.jpg) no-repeat 0 0;
+	width:36px;
+	height:41px;
+	float:left;
+	margin-left:169px;
+	_margin-left:133px;
+	}
+.gdyarrow{
+	background:url(../../images/TreatmentPlan/cluster_images/gdyarrow.jpg) no-repeat 0 0;
+	width:36px;
+	height:71px;
+	float:left;
+	margin-left:170px;
+	_margin-left:135px;
+	
+	}
+.gdyarrow2{
+	margin-top:-2px;
+	margin-top:0px\9;
+	*margin-top:0px;
+	_margin-top:5px;
+	}
+.gdyarrow3{
+	_margin-top:-2px;
+	}
+.space{
+	width:40px;
+	height:33px;
+	float:left;
+	}
+.space2{
+	width:36px;
+	height:71px;
+	float:left;
+	margin-left:63px;
+	_margin-left:33px;
+	}
+.space3{
+	float:left;
+	width:161px;
+	height:44px;
+	}
+.space4{
+	/*margin-left:-100px;
+	*margin-left:-6px;*/
+	
+	}
+/*.space5{
+	margin-top:0px;
+	margin-top:0px \9;
+	*margin-top:0px;
+	_margin-top:0px;
+	}*/
+.mood_white_box{
+	border:1px solid #000000;
+	float:left;
+	width:152px;
+	height:73px;
+	padding:5px;
+	text-align:center;
+}
+.mood_white_box2{
+	width:142px;
+	height:63px;
+	padding:10px;
+	}
+.mood_white_box3{
+	width:142px;
+	height:49px;
+	padding:17px 10px;
+	}
+.violet_box{
+	border:1px solid #000000;
+	float:left;
+	width:155px;
+	height:77px;
+	padding:3px;
+	line-height:6.5;
+	text-align:center;
+	}
+.violet_box2{
+	padding:22px 3px;
+	width:155px;
+	height:33px;
+	line-height:3;
+	}
+.key{
+	line-height:3;	
+	}
+.clear{
+	clear:both;
+	}
+
+.blue_box{
+	background-color: #83c7d3;
+	/*height:auto;*/
+	min-height:80px;
+	position:relative;
+	text-align:center;
+	width:162px;
+}
+.btopbox{
+	width:162px;
+	height:13px;
+	position:relative;
+	background:url(../../images/TreatmentPlan/common/btline.jpg) repeat-x 0 0;
+	}
+.blt{
+	background:url(../../images/TreatmentPlan/common/blt.jpg) no-repeat 0 0;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:13px;
+	height:13px;
+	}
+.brt{
+	background:url(../../images/TreatmentPlan/common/brt.jpg) no-repeat 0 0;
+	position:absolute;
+	right:0;
+	top:0;
+	width:22px;
+	height:13px;
+	}
+.bcenterbox{
+	width:162px;
+	/*height:100%;*/
+	min-height:70px;
+	min-height:60px \9;
+	*min-height:60px;
+	position:relative;
+	overflow:hidden;
+	_overflow:none;
+	_height:60px;
+	}
+.bwordbox{
+	width:131.9px;
+	_width:127px;
+	margin:0px 22px 0px 13px;
+	height:100%;
+	}
+.blline{
+	background:url(../../images/TreatmentPlan/common/blline.jpg) repeat-y 0 0;
+	width:13px;
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	_height:60px;
+	}
+.brline{
+	background:url(../../images/TreatmentPlan/common/brline.jpg) repeat-y 0 0;
+	width:22px;
+	position:absolute;
+	top:0;
+	right:0;
+	height:100%;
+	_height:60px;
+	}
+.bbottombox{
+	width:162px;
+	height:23px;
+	position:relative;
+	background:url(../../images/TreatmentPlan/common/bbline.jpg) repeat-x 0 bottom;
+	}
+.blb{
+	background:url(../../images/TreatmentPlan/common/blb.jpg) no-repeat 0 0;
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:15px;
+	height:23px;
+	}
+.brb{
+	background:url(../../images/TreatmentPlan/common/brb.jpg) no-repeat 0 0;
+	position:absolute;
+	right:0;
+	bottom:0;
+	width:22px;
+	height:23px;
+	}
+
+.white_box{
+	background-color: #ddebfd;
+	height:auto;	
+	position:relative;
+	text-align:center;
+	width:162px;
+}
+.wtopbox{
+	width:162px;
+	height:13px;
+	position:relative;
+	background:url(../../images/TreatmentPlan/common/wtline.jpg) repeat-x 0 0;
+	}
+.wlt{
+	background:url(../../images/TreatmentPlan/common/wlt.jpg) no-repeat 0 0;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:13px;
+	height:13px;
+	}
+.wrt{
+	background:url(../../images/TreatmentPlan/common/wrt.jpg) no-repeat 0 0;
+	position:absolute;
+	right:0;
+	top:0;
+	width:23px;
+	height:13px;
+	}
+.wcenterbox{
+	width:162px;
+	height:100%;
+	position:relative;
+	overflow:hidden;
+	_overflow:none;
+	_height:70px;
+	}
+.wwordbox{
+	width:126px;
+	margin:0px 23px 0px 13px;
+	height:100%;
+	}
+.wlline{
+	background:url(../../images/TreatmentPlan/common/wlline.jpg) repeat-y 0 0;
+	width:13px;
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	}
+.wrline{
+	background:url(../../images/TreatmentPlan/common/wrline.jpg) repeat-y 0 0;
+	width:23px;
+	position:absolute;
+	top:0;
+	right:0;
+	height:100%;
+	}
+.wbottombox{
+	width:162px;
+	height:21px;
+	position:relative;
+	background:url(../../images/TreatmentPlan/common/wbline.jpg) repeat-x 0 bottom;
+	top: 0px;
+	left: 0px;
+}
+.wlb{
+	background:url(../../images/TreatmentPlan/common/wlb.jpg) no-repeat 0 0;
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:13px;
+	height:21px;
+	}
+.wrb{
+	background:url(../../images/TreatmentPlan/common/wrb.jpg) no-repeat 0 0;
+	position:absolute;
+	right:0;
+	bottom:0;
+	width:23px;
+	height:21px;
+	}
+	
+.green_box{
+	background-color:#97d752;
+	/*height:auto;*/
+	min-height:85px;
+	position:relative;
+	text-align:center;
+	width:162px;
+}
+.gtopbox{
+	width:162px;
+	height:17px;
+	position:relative;
+	background:url(../../images/TreatmentPlan/common/gtline.jpg) repeat-x 0 0;
+	}
+.glt{
+	background:url(../../images/TreatmentPlan/common/glt.jpg) no-repeat 0 0;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:18px;
+	height:17px;
+	}
+.grt{
+	background:url(../../images/TreatmentPlan/common/grt.jpg) no-repeat 0 0;
+	position:absolute;
+	right:0;
+	top:0;
+	width:24px;
+	height:17px;
+	}
+.gcenterbox{
+	width:162px;
+	/*height:100%;*/
+	min-height:63px;
+	min-height:53px \9;
+	*min-height:53px;
+	position:relative;
+	overflow:hidden;
+	_overflow:none;
+	_height:60px;
+	}
+.gwordbox{
+	width:128px;
+	_width:126.9px;
+	margin:0px 23px 0px 13px;
+	height:100%;
+	}
+.glline{
+	background:url(../../images/TreatmentPlan/common/glline.jpg) repeat-y 0 0;
+	width:13px;
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	_height:60px;
+	}
+.grline{
+	background:url(../../images/TreatmentPlan/common/grline.jpg) repeat-y 0 0;
+	width:23px;
+	position:absolute;
+	top:0;
+	right:0;
+	height:100%;
+	_height:60px;
+	}
+.gbottombox{
+	width:162px;
+	height:27px;
+	position:relative;
+	background:url(../../images/TreatmentPlan/common/gbline.jpg) repeat-x 0 bottom;
+	}
+.glb{
+	background:url(../../images/TreatmentPlan/common/glb.jpg) no-repeat 0 0;
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:16px;
+	height:27px;
+	}
+.grb{
+	background:url(../../images/TreatmentPlan/common/grb.jpg) no-repeat 0 0;
+	position:absolute;
+	right:0;
+	bottom:0;
+	width:24px;
+	height:27px;
+	}	
+	
+.red_box{
+	background-color:#ff8181;
+	width:162px;
+	height:auto;
+	position:relative;
+	text-align:center;
+}
+.rtopbox{
+	width:162px;
+	height:17px;
+	position:relative;
+	background:url(../../images/TreatmentPlan/common/rtline.jpg) repeat-x 0 0;
+	}
+.rlt{
+	background:url(../../images/TreatmentPlan/common/rlt.jpg) no-repeat 0 0;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:19px;
+	height:17px;
+	}
+.rrt{
+	background:url(../../images/TreatmentPlan/common/rrt.jpg) no-repeat 0 0;
+	position:absolute;
+	right:0;
+	top:0;
+	width:24px;
+	height:17px;
+	}
+.rcenterbox{
+	width:162px;
+	height:100%;
+	position:relative;
+	overflow:hidden;
+	_overflow:none;
+	_height:60px;
+	}
+.rwordbox{
+	width:126px;
+	_width:126.9px;
+	margin:0px 23px 0px 13px;
+	height:100%;
+	}
+.rlline{
+	background:url(../../images/TreatmentPlan/common/rlline.jpg) repeat-y 0 0;
+	width:13px;
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	_height:60px;
+	}
+.rrline{
+	background:url(../../images/TreatmentPlan/common/rrline.jpg) repeat-y 0 0;
+	width:23px;
+	position:absolute;
+	top:0;
+	right:0;
+	height:100%;
+	_height:60px;
+	}
+.rbottombox{
+	width:162px;
+	height:27px;
+	position:relative;
+	background:url(../../images/TreatmentPlan/common/rbline.jpg) repeat-x 0 bottom;
+	}
+.rlb{
+	background:url(../../images/TreatmentPlan/common/rlb.jpg) no-repeat 0 0;
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:17px;
+	height:27px;
+	}
+.rrb{
+	background:url(../../images/TreatmentPlan/common/rrb2.jpg) no-repeat 0 0;
+	position:absolute;
+	right:0;
+	bottom:0;
+	width:26px;
+	height:27px;
+	}	
+.key2{
+	margin-left:105px;
+	_margin-left:55px;
+	margin-top:15px;
+	*margin-top:3px;
+	_margin-top:5px;
+	}
+
+.change{
+	min-height:70px;
+	}
+.change2{
+	min-height:52px;
+	}
+	
+	
+	
+	
+	

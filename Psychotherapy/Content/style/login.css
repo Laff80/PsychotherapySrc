@@ -1,0 +1,101 @@
+﻿/* Author：李鑫 DateTime：2010-12-15
+---------------------------------------------*/
+body
+{
+    color: #222222;
+    font-size: .75em;
+    font-family: Microsoft Yahei,Verdana,Simsun;
+    margin: 0;
+    padding: 0;
+}
+.lg-bg
+{
+    background: url("../images/login/bg.gif") repeat-x left bottom fixed;
+}
+
+.login
+{
+    margin: 10% auto;
+    width: 30%;
+}
+.login-text
+{
+    border: 1px solid #A2D0E5;
+    border-bottom: 0;
+    width: 90px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+.loginBorder
+{
+    border: 1px solid #A2D0E5;
+    padding: 5px;
+}
+.loginBox
+{
+    padding: 30px;
+    padding-bottom:5px;
+    background-color: #5BACBD;
+}
+.loginBox p
+{
+    text-align:right;
+    margin:0;
+}
+table
+{
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+th, td
+{
+    font-weight: normal;
+    padding: 3px 5px;
+    vertical-align: middle;
+}
+th
+{
+    text-align: right;
+}
+.selectlist-style
+{
+    border: 1px solid #FFF;
+}
+.text-style
+{
+    width: 80%;
+    border: 1px solid #FFF;
+    padding: 2px;
+}
+.text-style-code
+{
+    width: 50px;
+    border: 1px solid #FFF;
+    padding: 2px;
+    float: left;
+    margin-right: 5px;
+}
+.btn-style
+{
+    cursor: pointer;
+    padding: 3px 5px;
+    font-family: Arial;
+    font-size: 12px;
+}
+.erro-box-style
+{
+    border: 1px solid #CD0A0A;
+    color: #CD0A0A;
+    background-color: #FEF6F3;
+    padding: 5px;
+}
+.erro-icon
+{
+    width:16px;
+    height:16px;
+    background: url("../images/jquery-ui/ui-icons_cd0a0a_256x240.png") no-repeat 0px -144px;
+    display:block;
+    float:left;
+}

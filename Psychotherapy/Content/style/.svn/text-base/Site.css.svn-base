@@ -1,0 +1,328 @@
+﻿/* Author：李鑫 DateTime：2010-12-14
+---------------------------------------------*/
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    color: #222222;
+   font-size: .75em;
+    font-family: Microsoft Yahei,Arial,Verdana,Simsun;
+    /*font:12px/16px "Segoe UI",Calibri,Helvetica,Arial,sans-serif;*/
+    margin: 0;
+    padding: 0;
+}
+a:link
+{
+    color: #156FE9;
+    text-decoration: none;
+}
+a:visited
+{
+    color: #156FE9;
+    text-decoration: none;
+}
+a:hover
+{
+    color: #156FE9;
+    text-decoration: underline;
+}
+a:active
+{
+    color: #156FE9;
+    text-decoration: none;
+}
+
+ul
+{
+    list-style-type: none;
+}
+.topBar
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 28px;
+    width: 100%;
+}
+.topBar .wrap
+{
+    background: url("../images/topBar-bg.png") repeat-x scroll left top transparent;
+    color: #494846 !important;
+    height: 27px;
+    padding-top: 1px;
+}
+
+.main
+{
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+}
+.wrap .bar
+{
+    width: 89%;
+    height: auto;
+    margin: 0 auto;
+}
+.bar .left
+{
+    float: left;
+    height: 27px;
+    line-height: 27px;
+}
+.bar .right
+{
+    float: right;
+    height: 27px;
+    line-height: 27px;
+    padding-right: 2px;
+}
+.bar .right a
+{
+    text-decoration: none;
+}
+.bar .right a:hover
+{
+    text-decoration: underline;
+}
+.copyright
+{
+    margin-top: 20px;
+    width: 100%;
+    height: 22px;
+    padding: 5px 0 0px 0;
+    border-top: 1px solid #B8B8B9;
+    text-align: center;
+}
+
+/*Main
+-------------------------------------------------------*/
+.settings-ablue, .settings-ablue:visited, .settings-ablue:active
+{
+    font-family: Arial,sans-serif;
+    font-size: 13px;
+    color: #112abb;
+}
+.settings-container
+{
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: default;
+}
+.settings-container-form
+{
+    margin: 0px;
+}
+.roundedblock
+{
+    background-color: #5BACBD;
+}
+.roundedblock-header
+{
+    padding: 5px;
+}
+.settings-header
+{
+    min-height: 24px;
+    max-height: 35px;
+}
+.settings-contentwrapper
+{
+    padding: 0px 4px;
+    zoom: 1;
+}
+.settings-container-content
+{
+    background-color: #F2FBFF;
+    font-size: 13px;
+}
+.settings-tab
+{
+    font-size: 16px;
+    white-space: nowrap;
+    color: #144E7B;
+    padding: 4px 16px;
+}
+.settings-tab-active
+{
+    color: #144E7B !important;
+    font-weight: bold;
+    text-decoration: none !important;
+    cursor: default !important;
+    background-color: #F2FBFF;
+}
+.settings-item-captions
+{
+    width: 10%;
+    vertical-align: top;
+}
+.settings-item-caption
+{
+    font-size: 13px;
+    font-weight: bold;
+}
+.settings-item-content
+{
+    text-align: left;
+    width: 15%;
+    font-size: 15px;
+}
+.settings-divider
+{
+    background-color: #A9BEF1;
+    height: 1px;
+    line-height: 1px;
+}
+.settings-title
+{
+    color: #174F99;
+    line-height: 10px;
+}
+.roundedblock-tl
+{
+    background: url(../images/corner_left.gif) no-repeat scroll left top;
+}
+.roundedblock-tr
+{
+    background: url(../images/corner_right.gif) no-repeat scroll right top;
+}
+.roundedblock-bl
+{
+    background: url(../images/corner_bottom_left.gif) no-repeat scroll left bottom;
+}
+.roundedblock-br
+{
+    background: url(../images/corner_bottom_right.gif) no-repeat scroll right bottom;
+}
+.settings-footer
+{
+    padding: 2px 0pt 5px 6px;
+}
+.settings-container-back
+{
+    font-weight: bold;
+}
+.navigation
+{
+    border-bottom: 1px solid #B8B8B9;
+    height: 28px;
+    margin: 0 10px;
+    line-height: 30px;
+}
+.navigation a
+{
+    text-decoration: none;
+}
+.navigation a:hover
+{
+    text-decoration: underline; /*color:Green;*/
+}
+.main-content
+{
+    padding: 10px;
+    height: auto;
+}
+.btnCur
+{
+    height:22px; padding:1px 3px; line-height:10px; cursor:pointer
+}
+
+.data-loading
+{
+    font-family: Tahoma,Helvetica,Arial;
+    border: #75c0dc 4px solid;
+    background-color: #aae1f6;
+    padding: 10px 0;
+    width: 250px;
+    color: #0f6f92;
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+}
+.doclist
+{
+ 
+}
+.doclist table
+{
+    padding: 0px;
+    table-layout: fixed;
+    border: 0px;
+    margin:0px;
+    border-spacing: 0px 0px;
+}
+.doclist table
+{
+
+    background: #E3E8F3 url(../images/header_background.gif) repeat-x scroll 0% 0%;
+    border: 1px solid #BBCCFF;
+    color: #112ABB;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    height:24px;
+    line-height:24px;
+    font-size: 11px;
+}
+
+.doclist table thead tr td
+{
+    empty-cells: show;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: 6px;
+    color: #112ABB;
+    border-left: 1px solid #BCF;
+    border-top: 0;
+}
+.doclist table thead tr td.inp
+{
+    padding-left: 7px;  
+}
+.doclist table thead span
+{
+    color: #999999;
+}
+
+/*.doclist table thead tr td div
+{
+    vertical-align: middle;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    display: inline-block;
+    padding-top: 2px;
+}*/
+
+.doclist a, .barview_refresh a
+{
+    text-decoration: none;
+}
+.listitem
+{
+    background-color: #EFF3FA;
+    min-height: 160px;
+    max-height: 400px;
+    overflow: auto;
+}
+.listitem table
+{
+    border-collapse: collapse;
+    border-spacing: 2px 2px;
+    width: 100%;
+}
+.listitem table tbody tr td
+{
+    empty-cells: show;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: 7px;
+}
+.listitem_one
+{
+    width: 100%;
+    height: 24px;
+    border-bottom: 1px solid #dddddd;
+}
+  

@@ -1,0 +1,235 @@
+.clinicalServiceBasicPersonInfo,.treatmentPlanInfo,.clinicalServiceBasicInfo,.buttonClinicalServiceInfo{
+width:100%;
+float:left;
+clear:left;
+}
+.buttonClinicalServiceInfo{
+	margin-top:30px;
+}
+.clinicalServiceTable{
+margin-left:150px;
+width:800px;;
+margin:20px;
+}
+#container{
+	text-align:left;
+	background:#fff;
+	border:1px solid #ccc;
+	-webkit-box-shadow:rgba(0,0,0,.2) 0px 0px 5px;
+	-moz-box-shadow:rgba(0,0,0,.2) 0px 0px 5px;
+	box-shadow:rgba(0,0,0,.2) 0px 0px 5px;
+	
+	width:850px;
+	margin:auto;
+	
+}
+.clinicalServiceSelect{
+	border:1px solid #ccc;
+	margin:15px;
+	}
+
+ .wufoo{
+	margin:20px 14px 0 14px;
+	padding:0 0 20px 0;
+	position:relative;
+	
+}
+.page1 .pgStyle2 var{
+	padding-left:7px;
+	text-align:left;
+	background:none;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none;
+	
+}
+.page1 .pgStyle2 b{
+	float:none;
+	padding-right:0px;
+	
+}
+input.checkbox, input.radio{
+	display:block;
+	margin:4px 0 0 0;
+	padding:0;
+	width:13px;
+	height:13px;
+	
+}
+input.other{
+	margin:0 0 8px 25px;
+	
+}
+ li.first{
+	padding:0;
+	
+}
+ li.section h3{
+	font-weight:normal;
+	font-size:110%;
+	line-height:135%;
+	margin:0 0 3px 0;
+	width:auto;
+	padding:12px 1% 0 1%;
+	
+}
+ li div span{
+	margin:0;
+	display:block;
+	width:100%;
+	float:left;
+	
+}
+
+* html  li{
+	height: 1%;
+	margin-bottom:-3px;
+	
+}
+*+html  li{
+	height: 1%;
+	margin-bottom:-3px;
+	
+}
+* html  li div{
+	display:inline-block;
+	
+}
+*+html  ul, *+html  li div{
+	display:inline-block;
+	
+}
+ li div{
+	margin:0;
+	padding:0;
+	color:#444;
+	
+}
+ li span{
+	margin:0 .3em 0 0;
+	padding:0;
+	float:left;
+	color:#444;
+	
+}
+ li.first{
+	padding:0;
+	
+}
+ li.first h3{
+	padding:8px 1% 0 1%;
+	border-top:none !important;
+	
+}
+ li.section div{
+	display:block;
+	width:auto;
+	font-size:85%;
+	line-height:160%;
+	margin:0 0 1em 0;
+	padding:0 1% 0 1%;
+	
+}
+ li.section.scrollText{
+	border:1px solid #dedede;
+	height:150px;
+	overflow:auto;
+	margin-bottom:10px;
+	padding:10px;
+	-webkit-box-shadow:rgba(0,0,0,.15) 0px 0px 3px;
+	-moz-box-shadow:rgba(0,0,0,.15) 0px 0px 3px;
+	box-shadow:rgba(0,0,0,.15) 0px 0px 3px;
+	
+}
+li.notStacked div span{
+	width:auto;
+	margin:0 7px 0 0;
+	
+}
+li.notStacked{
+margin-left:9px;
+}
+ li div label,  li span label{
+	margin:0;
+	padding-top:3px;
+	clear:both;
+	font-size:85%;
+	line-height:160%;
+	color:#444;
+	display:block;
+	
+}
+label.desc{
+	font-size:95%;
+	font-weight:bold;
+	color:#222;
+	line-height:150%;
+	margin:0;
+	padding:0 0 3px 0;
+	border:none;
+	display:block;
+	
+}
+label.choice{
+	display:block;
+	font-size:100%;
+	line-height:150%;
+	margin:-17px 0 0 23px;
+	padding:0 0 5px 0;
+	color:#222;
+	width:88%;
+	
+}
+.info{
+	display:inline-block;
+	clear:both;
+	margin:0 0 5px 0;
+	padding:0 1% 1.1em 1%;
+	
+}
+.info[class]{
+	display:block;
+	
+}
+.info h2{
+	font-weight:normal;
+	font-size:160%;
+	margin:0 0 5px 0;
+	clear:left;
+	
+	border-top:1px dotted #ccc;
+	
+}
+.info div{
+	font-size:95%;
+	line-height:135%;
+	color:#555;
+	
+}
+ ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	
+}
+ li.buttons{
+	width:auto !important;
+	position:relative;
+	clear:both;
+	padding:10px 1% 10px 1%;
+	
+}
+ li.buttons input{
+	font-size:100%;
+	margin-right:5px;
+	
+}
+input.btTxt{
+	padding:0 7px;
+	width:auto;
+	overflow:visible;
+	
+}
+li{
+	clear:left;
+}

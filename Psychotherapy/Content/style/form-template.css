@@ -1,0 +1,159 @@
+﻿
+.form-template
+{
+}
+.form-template input
+{
+    /*margin-right: 4px;*/
+}
+.form-template fieldset
+{
+    margin-bottom: 5px;
+}
+.template-content-default, .template-content
+{
+    padding-bottom: 40px;
+}
+
+h3.title
+{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+ul.beginItem li
+{
+    padding-bottom: 10px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+ul.beginItem li div
+{
+    font-weight: normal;
+}
+ul.beginItem li ul
+{
+    padding-left: 30px;
+}
+
+ul.beginItem li ul li
+{
+    padding-bottom: 0px;
+    line-height: 25px;
+    font-weight: normal;
+    word-spacing: 0.3em;
+}
+
+.template-content ul.beginItem li:hover
+{
+    background-color: #fff7c0; /*#E6B33D;*/
+}
+
+/*ul.beginItem li input[type='text']
+{
+   border:0;
+   border-bottom:1px solid #000;
+   background:transparent;
+}*/
+
+.Txt-underline, .Txt-underline-min, .Txt-underline-max
+{
+    border-bottom: 1px solid #494846;
+    display: inline-block;
+    font-weight: normal;
+    padding-left: 1px;
+    margin-left: 4px;
+}
+.Txt-underline
+{
+    width: 150px;
+}
+.Txt-underline-min
+{
+    width: 60px;
+}
+.Txt-underline-max
+{
+    width: 400px;
+}
+
+.inputTxt, .inputTxt-min, .inputTxt-max
+{
+    border: 1px solid #7F9DB9;
+    font-family: Tahoma,Arial;
+    font-size: 12px;
+    height: 17px;
+    line-height: 1.231;
+    overflow: hidden;
+    padding: 2px 5px 0;
+    vertical-align: middle;
+    background: url("../images/fieldbg.gif") repeat-x scroll center top #FFFFFF;
+}
+
+.inputTxt
+{
+    width: 150px;
+}
+.inputTxt-min
+{
+    width: 50px;
+}
+
+.inputTxt-max
+{
+    width: 400px;
+}
+.textarea
+{
+    border: 1px solid #7F9DB9;
+    font-family: Tahoma,Arial;
+    font-size: 12px;
+    width: 400px;
+    min-height:100px;
+    line-height: 1.231;
+    overflow-y: hidden;
+    padding: 2px 5px 0;
+    vertical-align: middle;
+    background: url("../images/fieldbg.gif") repeat-x scroll center top #FFFFFF;
+}
+.inputTxt-Search
+{
+}
+
+.template-content table
+{
+    border-collapse: collapse;
+    padding: 5px;
+}
+.template-content table th
+{
+    padding: 5px;
+    text-align: left;
+}
+.template-content table td
+{
+    padding: 5px;
+}
+.template-content table tr:hover
+{
+    background-color: #fff7c0;
+}
+.font-normal
+{
+    border-collapse: collapse;
+    font-weight: normal;
+}
+.APA-TABLE
+{
+    border-collapse: collapse;
+    border: 1px solid #CCC;
+}
+.APA-TABLE td, .APA-TABLE th
+{
+    padding:5px;
+    border: 1px solid #CCC;
+}
+
+
+

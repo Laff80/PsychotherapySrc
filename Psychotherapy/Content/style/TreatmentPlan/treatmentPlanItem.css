@@ -1,0 +1,183 @@
+#fullbg
+        {
+            position:fixed;
+            cursor:pointer;
+            background-color: Gray;
+            display: none;
+            z-index: 100;
+            left: 0px;
+            top: 0px;
+            filter: Alpha(Opacity=30);
+            -moz-opacity: 0.4;
+            opacity: 0.4;
+        }
+#fullContent
+        {
+            cursor:pointer;
+			position:absolute;
+			background-color:#FFFFFF;
+            display: none;
+            z-index: 200;
+            top:100px;
+            
+           
+        }
+.STYLE1 {
+	font-size: 16px;
+	font-weight: bold;
+	color:#6CC;
+}
+
+
+
+
+ .popDiv
+        {
+         	background-color:#FFF;
+        	border:2px solid #5bacbd;
+         	display:none;
+         	width:300px;
+         	
+         	text-align:center;
+         	position:absolute;
+         	z-index: 500;
+         }
+       
+		 .pop_buttom{
+			 width:300px;
+			 height:30px;
+			 background-color:#5bacbd;
+			 text-align:center;
+		 }
+    	.pop_content{
+			width:300px;
+			height:150px;
+		}
+		.save{
+		height: 20px;
+		color: #FFF;
+		font-size: 12px;
+		line-height: 12px;
+		vertical-align: middle;
+		background: #4B6866;
+		}
+		
+		
+#MrJin {
+position:static;
+*position:relative;
+height:150px;
+width:300px;
+*display:block!important;
+display:table!important;
+}
+#MrJin_a {
+position:static;
+*position:absolute;
+display:table-cell;
+vertical-align:middle;
+*display:block;
+top:50%;
+width:100%;
+}
+#MrJin_b {
+position:relative;
+top:-50%;
+text-align:center;
+width:100%;
+}
+.treatmentplanTitle{
+color: #FFF;
+font-size: 18px;
+}
+
+
+.symptomTitle,.longTermGoalTitle,.objectiveTitle,.strategyTitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	width:300px;
+	height:20px;
+	
+}
+.operation {color: #0070CE}
+.symptom{
+clear:left;
+margin:0px;
+padding:0px;
+}
+.symptomTitle,.longTermContent,.longTermGoalTitle{
+margin-left:15px;
+}
+.symptomContent{
+padding-left:15px;
+width:750px;
+}
+.leftSymptomTitle,.leftLongTermGoalTitle,.rightObjectiveTitle,.rightStrategyTitle{
+width:150px; 
+
+float:left;
+text-decoration:underline;
+}
+
+.rightSymptomTitle,.rightLongTermGoalTitle,.leftObjectiveTitle,.leftStrategyTitle{
+float:left;
+width:150px; 
+}
+
+.leftSymptomContent{
+width:320px; 
+/*float:left;*/
+}
+.rightSymptomContent{
+float:left;
+width:400px; 
+}
+.leftObjectiveContent{
+width:220px; 
+}
+.rightObjectiveContent{
+float:left;
+width:400px; 
+}
+.leftStrategyContent{
+width:220px; 
+}
+.rightStrategyContent{
+float:left;
+width:400px; 
+}
+.longTermGoals{
+clear:left;
+margin-left:15px;
+}
+.longTermGoalContent{
+margin-left:15px;
+width:860px;
+}
+.objectiveContent{
+margin-left:15px;
+}
+.objectives{
+clear:left;
+margin-left:15px;
+width:700px;
+}
+.strategies{
+clear:left;
+margin-left:15px;
+width:700px;.
+}
+.strategy{
+clear:left;
+margin-left:15px;
+width:800px;
+}
+.objective{
+clear:left;
+margin-left:15px;
+width:800px;
+}
+.objectiveContent{
+clear:left;
+}

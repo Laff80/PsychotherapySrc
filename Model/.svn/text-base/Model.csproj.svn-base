@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{052B1A96-C883-4ECE-A581-5856356D9067}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Insourcia.Psychotherapy.Model</RootNamespace>
+    <AssemblyName>Insourcia.Psychotherapy.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccountPlan.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicalService.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicalServiceDiagnosi.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicalServiceNoteRate.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cluster.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Department.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="File.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Form.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FormData.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GlanceAndGuideline.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Group.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LogActionType.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LogActionTypePartial.cs" />
+    <Compile Include="LogEnums.cs" />
+    <Compile Include="LogInfo.cs" />
+    <Compile Include="LogRecord.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LogTypeWrapper.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LogTypeWrapperPartial.cs" />
+    <Compile Include="LongTermGoal.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PsychotherapyModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Objective.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Patient.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessGuide.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SiteDepartmentUser.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Strategy.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SubItemPermissionModel.cs" />
+    <Compile Include="Symptom.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SystemFunction.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TreatmentPlan.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TreatmentPlanItem.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserCategoryPermission.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserFilePermission.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserFormDataPermission.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserPatientPermission.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserPayment.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserTreatmentPlanPermission.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserType.cs">
+      <DependentUpon>PsychotherapyModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PsychotherapyModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>PsychotherapyModel.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

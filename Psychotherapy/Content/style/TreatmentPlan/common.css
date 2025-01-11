@@ -1,0 +1,57 @@
+#fullbg
+{
+    position: absolute;
+    cursor: pointer;
+    background-color: #FFF;
+    display: none;
+    z-index: 100;
+    filter: Alpha(Opacity=30);
+    -moz-opacity: 0.4;
+    opacity: 0.4;
+}
+
+
+#jumpDivForClusterTitle
+{
+    height: 25px;
+    width: 300px;
+    padding: 3;
+    border: lightblue 1px solid;
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='lightgreen', endColorStr='#FFFFFF', gradientType='1');
+}
+#jumpDivForCluster
+{
+    width: 300px;
+    height: auto;
+    position: relative;
+    position: absolute;
+    z-index: 200;
+}
+#jumpDivForClusterButton
+{
+    width: 300px;
+    margin: auto;
+}
+#jumpDivForClusterContent
+{
+    width: 300px;
+}
+
+.ok
+{
+    line-height: 25px;
+    padding: 0px 10px;
+    margin-top: 4px;
+    width: 50px;
+    height: 30px;
+    vertical-align: middle;
+}
+.contine
+{
+    line-height: 25px;
+    padding: 0px 10px;
+    margin-top: 4px;
+    width: 80px;
+    height: 30px;
+    vertical-align: middle;
+}

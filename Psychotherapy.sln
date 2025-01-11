@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqKit", "LinqKitSource\LinqKit.csproj", "{230964C1-F7C5-4EDC-B812-BB4F19915139}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcPaging", "MvcPaging\MvcPaging.csproj", "{B5CE93E2-BA2D-4347-9C2D-3228F39FC097}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{697DCD0F-D2FA-484F-8D1F-42033E374DA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{400F23AA-C5BC-40FB-A08A-DC0E16904548}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{052B1A96-C883-4ECE-A581-5856356D9067}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Psychotherapy", "Psychotherapy\Psychotherapy.csproj", "{D059FA86-83EA-4982-859F-8F22C7C0F20D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bll", "Bll\Bll.csproj", "{1B3BE663-1E54-443C-8C24-AD37C827D62D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLLTests", "BLLTests\BLLTests.csproj", "{4ACE6BCF-C59D-4C17-A56E-8BCEBB148856}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BDABEEB3-FEFB-472E-BE20-C0E6EB4AE187}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		Psychotherapy.vsmdi = Psychotherapy.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Psychotherapy.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{230964C1-F7C5-4EDC-B812-BB4F19915139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{230964C1-F7C5-4EDC-B812-BB4F19915139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{230964C1-F7C5-4EDC-B812-BB4F19915139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{230964C1-F7C5-4EDC-B812-BB4F19915139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5CE93E2-BA2D-4347-9C2D-3228F39FC097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5CE93E2-BA2D-4347-9C2D-3228F39FC097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5CE93E2-BA2D-4347-9C2D-3228F39FC097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5CE93E2-BA2D-4347-9C2D-3228F39FC097}.Release|Any CPU.Build.0 = Release|Any CPU
+		{697DCD0F-D2FA-484F-8D1F-42033E374DA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{697DCD0F-D2FA-484F-8D1F-42033E374DA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{697DCD0F-D2FA-484F-8D1F-42033E374DA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{697DCD0F-D2FA-484F-8D1F-42033E374DA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{400F23AA-C5BC-40FB-A08A-DC0E16904548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{400F23AA-C5BC-40FB-A08A-DC0E16904548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{400F23AA-C5BC-40FB-A08A-DC0E16904548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{400F23AA-C5BC-40FB-A08A-DC0E16904548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{052B1A96-C883-4ECE-A581-5856356D9067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{052B1A96-C883-4ECE-A581-5856356D9067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{052B1A96-C883-4ECE-A581-5856356D9067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{052B1A96-C883-4ECE-A581-5856356D9067}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D059FA86-83EA-4982-859F-8F22C7C0F20D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D059FA86-83EA-4982-859F-8F22C7C0F20D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D059FA86-83EA-4982-859F-8F22C7C0F20D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D059FA86-83EA-4982-859F-8F22C7C0F20D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B3BE663-1E54-443C-8C24-AD37C827D62D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B3BE663-1E54-443C-8C24-AD37C827D62D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B3BE663-1E54-443C-8C24-AD37C827D62D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B3BE663-1E54-443C-8C24-AD37C827D62D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ACE6BCF-C59D-4C17-A56E-8BCEBB148856}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ACE6BCF-C59D-4C17-A56E-8BCEBB148856}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ACE6BCF-C59D-4C17-A56E-8BCEBB148856}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ACE6BCF-C59D-4C17-A56E-8BCEBB148856}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
